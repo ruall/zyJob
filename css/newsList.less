@@ -1,0 +1,333 @@
+.news{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding-top: 65px;
+  .newsList{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px;
+    overflow: hidden;
+    .hotList{
+      width: 850px;
+      height: 300px;
+      float: left;
+      .title{
+        width: 100%;
+        height: 49px;
+        line-height: 49px;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        font-size: 22px;
+        color: #000;
+        text-indent: 20px;
+        position: relative;
+        &:after{
+          content: '';
+          width: 4px;
+          height: 20px;
+          background-color: rgb(2,178,181);
+          position: absolute;
+          top: 15px;
+          left: 0;
+        }
+        .left{
+          display: inline-block;
+          width: 80%;
+          float: left;
+          text-align: left;
+        }
+        .right{
+          cursor: pointer;
+          display: inline-block;
+          width: 20%;
+          font-size: 16px;
+          float: left;
+          text-align: right;
+          color: #666;
+        }
+      }
+      .content{
+        width: 100%;
+        height: 250px;
+        ul{
+          li{
+            cursor: pointer;
+            width: 31%;
+            height: 220px;
+            float: left;
+            margin-left: 1.5%;
+            margin-top: 20px;
+            img{
+              width: 100%;
+              height: 180px;
+            }
+            span{
+              display: inline-block;
+              width: 100%;
+              line-height: 30px;
+              font-size: 14px;
+              color: #666;
+              text-align: center;
+            }
+            &:hover{
+              box-shadow: 0 0 15px rgba(0,0,0,0.25);
+              transition: box-shadow .5s;
+            }
+          }
+        }
+      }
+    }
+    .hotJob{
+      width: 300px;
+      height: 300px;
+      float: right;
+      .title{
+        width: 100%;
+        height: 49px;
+        line-height: 49px;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        font-size: 22px;
+        color: #000;
+        text-indent: 20px;
+        position: relative;
+        &:after{
+          content: '';
+          width: 4px;
+          height: 20px;
+          background-color: rgb(2,178,181);
+          position: absolute;
+          top: 15px;
+          left: 0;
+        }
+        .left{
+          display: inline-block;
+          width: 80%;
+          float: left;
+          text-align: left;
+        }
+      }
+      .content{
+        width: 100%;
+        height: 250px;
+        ul{
+          li{
+            width: 100%;
+            height: 90px;
+            margin-top: 20px;
+            float: left;
+            cursor: pointer;
+            img{
+              width: 110px;
+              height: 90px;
+              float: left;
+            }
+            span{
+              display: inline-block;
+              width: calc(100% - 150px);
+              margin-left: 20px;
+              float: left;
+              font-size: 14px;
+              &:nth-of-type(1){
+                color: #353535;
+                margin-top: 10px;
+                line-height: 20px;
+              }
+              &:nth-of-type(2){
+                color: #ff6537;
+                margin-top: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .news-list{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px;
+    overflow: hidden;
+    .hotList{
+      width: 850px;
+      height: 100%;
+      float: left;
+      .title{
+        width: 100%;
+        height: 49px;
+        line-height: 49px;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        font-size: 22px;
+        color: #000;
+        text-indent: 20px;
+        position: relative;
+        &:after{
+          content: '';
+          width: 4px;
+          height: 20px;
+          background-color: rgb(2,178,181);
+          position: absolute;
+          top: 15px;
+          left: 0;
+        }
+        .left{
+          display: inline-block;
+          width: 80%;
+          float: left;
+          text-align: left;
+        }
+        .right{
+          cursor: pointer;
+          display: inline-block;
+          width: 20%;
+          font-size: 16px;
+          float: left;
+          text-align: right;
+          color: #666;
+        }
+      }
+      .content-list{
+        width: 100%;
+        ul{
+          li{
+            float: left;
+            cursor: pointer;
+            width: 100%;
+            height: 100px;
+            margin-bottom: 15px;
+            margin-top: 20px;
+            position: relative;
+            &:after{
+              content: '';
+              width: 100%;
+              height: 1px;
+              border-bottom: 1px dashed #e5e5e5;
+              position: absolute;
+              bottom: -20px;
+              left: 0;
+            }
+            &:last-of-type{
+              &:after{
+                content:'';
+                border: 0;
+              }
+            }
+            img{
+              width: 135px;
+              height: 100px;
+              float: left;
+            }
+            span{
+              display: inline-block;
+              width: calc(100% - 145px);
+              float: left;
+              margin-left: 10px;
+              &:first-of-type{
+                font-size: 15px;
+                color: #212121;
+                line-height: 30px;
+              }
+              &:last-of-type{
+                padding-top: 10px;
+                font-size: 12px;
+                line-height: 20px;
+                color: #797979;
+              }
+            }
+            &:hover{
+              box-shadow: 0 0 15px rgba(0,0,0,0.3);
+              border-radius: 3px;
+              transition: box-shadow .5s;
+            }
+          }
+        }
+      }
+    }
+    .hotJob{
+      width: 300px;
+      height: 300px;
+      float: right;
+      .title{
+        width: 100%;
+        height: 49px;
+        line-height: 49px;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        font-size: 22px;
+        color: #000;
+        text-indent: 20px;
+        position: relative;
+        &:after{
+          content: '';
+          width: 4px;
+          height: 20px;
+          background-color: rgb(2,178,181);
+          position: absolute;
+          top: 15px;
+          left: 0;
+        }
+        .left{
+          display: inline-block;
+          width: 80%;
+          float: left;
+          text-align: left;
+        }
+      }
+      .content{
+        width: 100%;
+        height: 250px;
+        .swiper-container {
+          cursor: pointer;
+          width: 100%;
+          height: 250px;
+          margin: 15px auto;
+          border-radius: 3px;
+          img{
+            width: 100%;
+            height: 260px;
+          }
+          span{
+            display: inline-block;
+            font-size: 14px;
+            line-height: 25px;
+            margin-top: 10px;
+            color: #666;
+          }
+        }
+        .swiper-pagination{
+          padding-top: 20px;
+        }
+        .swiper-pagination-bullets{
+          bottom: 0;
+        }
+        .swiper-pagination-bullet-active{
+          background: #02b2b5;
+        }
+      }
+    }
+  }
+}
+.info-content{
+  width: 1200px;
+  padding: 20px;
+  margin: 65px auto;
+  background-color: #fff;
+  h3{
+    font-weight: normal;
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    line-height: 50px;
+    padding-bottom: 20px;
+  }
+  p{
+    font-size: 14px;
+    color: #999;
+    line-height: 30px;
+    text-align: left;
+    text-indent: 28px;
+    padding-bottom: 20px;
+  }
+}

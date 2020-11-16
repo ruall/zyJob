@@ -1,0 +1,643 @@
+.creatResume {
+  width: 1200px;
+  height: auto;
+  overflow: hidden;
+  margin: 60px auto;
+}
+.creatResume .left {
+  width: 190px;
+  height: 100%;
+  float: left;
+}
+.creatResume .left ul {
+  float: left;
+  width: 192px;
+  background: #FFFFFF;
+  margin-bottom: 20px;
+  position: relative;
+}
+.creatResume .left ul li {
+  width: 192px;
+  height: 38px;
+  line-height: 38px;
+  border-bottom: #F1F1F1 1px solid;
+  position: relative;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  color: #666;
+}
+.creatResume .left ul li:hover,
+.creatResume .left ul li.cur {
+  background-color: #EFEFEF;
+}
+.creatResume .left ul li:hover:after,
+.creatResume .left ul li.cur:after {
+  content: '';
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #F0504E;
+}
+.creatResume .right {
+  float: left;
+  margin-left: 28px;
+  width: 980px;
+  background: #FFFFFF;
+  border-top: #EFEFEF 4px solid;
+  min-height: 660px;
+  border-radius: 0px 0px 9px 9px;
+  padding-bottom: 9px;
+}
+.creatResume .right .rightMain {
+  width: 900px;
+  padding: 10px 40px;
+  float: left;
+  font-size: 14px;
+}
+.creatResume .right .rightMain .title {
+  width: 100%;
+  height: 34px;
+  line-height: 34px;
+  margin-top: 20px;
+  float: left;
+  font-size: 16px;
+  color: #1f548c;
+  padding-left: 5px;
+  font-weight: 600;
+  border-bottom: 2px solid #f1f1f1;
+}
+.creatResume .right .rightMain .jobInfo {
+  width: 100%;
+  float: left;
+  margin-top: 20px;
+}
+.creatResume .right .rightMain .jobInfo .price {
+  font-size: 14px;
+  color: #666;
+}
+.creatResume .right .personInfo {
+  width: 900px;
+  padding: 30px 30px 0 30px;
+  float: left;
+  font-size: 14px;
+}
+.creatResume .right .personInfo .bLfet {
+  width: 144px;
+  height: 142px;
+  float: left;
+  background: url("../images/head.jpg") no-repeat;
+  cursor: pointer;
+}
+.creatResume .right .personInfo .bRight {
+  width: 634px;
+  margin-left: 2px;
+  float: left;
+}
+.creatResume .right .personInfo .bRight .basicName {
+  width: 604px;
+  margin-left: 30px;
+  height: 36px;
+  float: left;
+  line-height: 28px;
+  border-bottom: 1px solid #F2F2F2;
+}
+.creatResume .right .personInfo .bRight .basicName .resumeTit {
+  width: 100%;
+  float: left;
+  height: 28px;
+}
+.creatResume .right .personInfo .bRight .basicName .resumeTit h2 {
+  margin-right: 15px;
+  float: left;
+  font-size: 22px;
+  color: #333;
+}
+.creatResume .right .personInfo .bRight .basicName .resumeTit .resumeEdit {
+  float: left;
+  height: 28px;
+  line-height: 28px;
+}
+.creatResume .right .personInfo .bRight .basicName .resumeTit .resumeEdit a {
+  float: left;
+  color: #98C3E6;
+  font-size: 13px;
+}
+.creatResume .right .personInfo .bRight .basicName .resumeTit .resumeEdit a i {
+  background: url(../images/icon3.png) 0px -48px no-repeat;
+  margin-top: 3px;
+  width: 24px;
+  height: 24px;
+  float: left;
+}
+.creatResume .right .personInfo .bRight .bInfo {
+  float: left;
+  width: 604px;
+  margin-left: 30px;
+}
+.creatResume .right .personInfo .bRight .bInfo ul {
+  width: 100%;
+  float: left;
+  margin-top: 8px;
+  height: 24px;
+}
+.creatResume .right .personInfo .bRight .bInfo ul li {
+  margin-right: 30px;
+  float: left;
+  height: 24px;
+  line-height: 24px;
+  font-size: 13px;
+  color: #333;
+}
+.creatResume .right .personInfo .bRight .bInfo ul li i {
+  background: url(../images/icon3.png) no-repeat;
+  float: left;
+}
+.creatResume .right .personInfo .bRight .bInfo ul li i.sex_f {
+  background-position: -149px -72px;
+  width: 16px;
+  height: 14px;
+  margin-top: 5px;
+}
+.creatResume .right .personInfo .bRight .bInfo ul li i.age {
+  background-position: -63px 0px;
+  width: 16px;
+  height: 14px;
+  margin-top: 5px;
+}
+.creatResume .right .personInfo .bRight .bInfo ul li i.work {
+  background-position: -127px 0px;
+  width: 16px;
+  height: 14px;
+  margin-top: 5px;
+}
+.creatResume .right .personInfo .bRight .bInfo ul li i.map {
+  background-position: -90px 0px;
+  width: 12px;
+  height: 14px;
+  margin-top: 5px;
+}
+.creatResume .right .personInfo .bRight .bInfo dl {
+  width: 100%;
+  float: left;
+  margin-top: 5px;
+  height: 24px;
+  font-size: 13px;
+  color: #333;
+}
+.creatResume .right .personInfo .bRight .bInfo dl.supp1 {
+  font-size: 14px;
+  color: #272727;
+}
+.creatResume .right .personInfo .bRight .bInfo dl dt {
+  float: left;
+  height: 24px;
+  line-height: 24px;
+}
+.creatResume .right .personInfo .bRight .bInfo dl dd {
+  float: left;
+  height: 24px;
+  line-height: 24px;
+  margin-right: 30px;
+}
+.creatResume .right .personInfo .bRight .contact {
+  width: 632px;
+  float: left;
+  background: #fafafa;
+  margin-top: 5px;
+  border-radius: 5px;
+  height: 42px;
+  border: 1px solid #f1f1f1;
+}
+.creatResume .right .personInfo .bRight .contact .info {
+  float: left;
+  padding: 0 10px;
+  margin-top: 12px;
+  height: 20px;
+  line-height: 20px;
+  color: #999;
+  margin-left: 15px;
+}
+.creatResume .right .personInfo .bRight .contact .info i {
+  background: url(../images/icon3.png) -93px -48px no-repeat;
+  margin-top: 2px;
+  float: left;
+  width: 17px;
+  height: 16px;
+}
+.creatResume .right .personInfo .bRight .contact .info strong {
+  font-size: 16px;
+  color: #3d84b8;
+}
+.creatResume .right .personInfo .bRight .contact .info .phoneAddr {
+  color: #999;
+  font-size: 13px;
+}
+.creatResume .right .personInfo .bRight .contact .bEmail {
+  color: #3d84b8;
+  font-size: 13px;
+  float: left;
+  height: 20px;
+  line-height: 20px;
+  border-left: 1px solid #d9d9d9;
+  padding-left: 15px;
+  margin-top: 12px;
+}
+.creatResume .right .resumeMange {
+  width: 100%;
+  padding: 30px 30px 0 30px;
+  float: left;
+}
+.creatResume .right .resumeMange .resumeTit {
+  width: 100%;
+  float: left;
+  height: 28px;
+}
+.creatResume .right .resumeMange .resumeTit h2 {
+  margin-right: 15px;
+  float: left;
+  font-size: 18px;
+  color: #333;
+}
+.creatResume .right .resumeMange .resumeTit .resumeEdit {
+  float: left;
+  height: 28px;
+  line-height: 28px;
+}
+.creatResume .right .resumeMange .resumeTit .resumeEdit a {
+  cursor: pointer;
+  float: left;
+  color: #98C3E6;
+  font-size: 13px;
+}
+.creatResume .right .resumeMange .resumeTit .resumeEdit a:hover {
+  color: #C2332F;
+  text-decoration: none;
+}
+.creatResume .right .resumeMange .resumeTit .resumeEdit a:hover i {
+  background: url(../images/icon3.png) 0px -79px no-repeat;
+}
+.creatResume .right .resumeMange .resumeTit .resumeEdit a i {
+  background: url(../images/icon3.png) 0px -48px no-repeat;
+  margin-top: 3px;
+  width: 24px;
+  height: 24px;
+  float: left;
+}
+.creatResume .right .resumeMange .objectiveCon {
+  width: 100%;
+  float: left;
+  margin-top: 10px;
+  padding: 0 20px;
+  font-size: 13px;
+}
+.creatResume .right .resumeMange .objectiveCon dl {
+  width: 370px;
+  float: left;
+  height: 36px;
+  line-height: 36px;
+}
+.creatResume .right .resumeMange .objectiveCon dl dt {
+  width: 70px;
+  float: left;
+  color: #999;
+}
+.creatResume .right .resumeMange .objectiveCon dl dd {
+  width: 300px;
+  float: left;
+  color: #333;
+}
+.creatResume .right .resumeMange .resumeMangeCon {
+  margin-top: 20px;
+  width: 100%;
+  float: left;
+}
+.creatResume .right .resumeMange .resumeMangeCon .listCon {
+  width: 100%;
+  float: left;
+}
+.creatResume .right .resumeMange .resumeMangeCon .listCon .listLeft {
+  width: 115px;
+  float: left;
+  padding-right: 30px;
+  height: 24px;
+}
+.creatResume .right .resumeMange .resumeMangeCon .listCon .listLeft .listTime {
+  color: #333;
+  font-size: 13px;
+  text-align: right;
+  float: left;
+  width: 100%;
+  line-height: 24px;
+  height: 24px;
+}
+.creatResume .right .resumeMange .resumeMangeCon .listCon .listCenter {
+  width: 765px;
+  float: left;
+}
+.creatResume .right .resumeMange .resumeMangeCon .listCon .listCenter .info {
+  width: 700px;
+  margin-left: 0;
+  float: left;
+  min-height: 15px;
+  color: #272727;
+  border-left: 1px solid #ebebeb;
+  padding: 5px 37px 15px 24px;
+}
+.creatResume .right .resumeMange .resumeMangeCon .listCon .listCenter .info .con {
+  width: 100%;
+  float: left;
+  line-height: 24px;
+  word-break: break-all;
+}
+.creatResume .right .resumeMange .objectiveInput,
+.creatResume .right .resumeMange .resumeMangeInput {
+  width: 750px;
+  float: left;
+  padding: 20px 15px 40px 15px;
+  background: #FAFAFA;
+  margin-top: 10px;
+}
+.creatResume .right .resumeMange .objectiveInput .el-range-separator,
+.creatResume .right .resumeMange .resumeMangeInput .el-range-separator {
+  width: 15%;
+}
+.creatResume .right .resumeMange .workerCon,
+.creatResume .right .resumeMange .educationCon {
+  margin-top: 15px;
+  width: 100%;
+  float: left;
+}
+.creatResume .right .resumeMange .workerCon .listCon,
+.creatResume .right .resumeMange .educationCon .listCon {
+  width: 100%;
+  float: left;
+}
+.creatResume .right .resumeMange .workerCon .listCon .listLeft,
+.creatResume .right .resumeMange .educationCon .listCon .listLeft {
+  width: 145px;
+  float: left;
+  padding-right: 30px;
+  height: 24px;
+}
+.creatResume .right .resumeMange .workerCon .listCon .listLeft .listTime,
+.creatResume .right .resumeMange .educationCon .listCon .listLeft .listTime {
+  color: #333;
+  font-size: 13px;
+  text-align: right;
+  float: left;
+  width: 100%;
+  line-height: 24px;
+  height: 24px;
+}
+.creatResume .right .resumeMange .workerCon .listCon .listCenter,
+.creatResume .right .resumeMange .educationCon .listCon .listCenter {
+  width: 565px;
+  float: left;
+}
+.creatResume .right .resumeMange .workerCon .listCon .listCenter .tit,
+.creatResume .right .resumeMange .educationCon .listCon .listCenter .tit {
+  width: 535px;
+  float: left;
+  height: 24px;
+  line-height: 24px;
+  overflow: hidden;
+  background: url(../images/icon3.png) -24px -108px no-repeat;
+  padding-left: 30px;
+}
+.creatResume .right .resumeMange .workerCon .listCon .listCenter .tit strong,
+.creatResume .right .resumeMange .educationCon .listCon .listCenter .tit strong {
+  float: left;
+  color: #3d84b8;
+  overflow: hidden;
+}
+.creatResume .right .resumeMange .workerCon .listCon .listCenter .tit b,
+.creatResume .right .resumeMange .educationCon .listCon .listCenter .tit b {
+  float: left;
+  padding: 0 10px;
+  color: #e4e4e4;
+}
+.creatResume .right .resumeMange .workerCon .listCon .listCenter .tit span,
+.creatResume .right .resumeMange .educationCon .listCon .listCenter .tit span {
+  float: left;
+  color: #3d84b8;
+}
+.creatResume .right .resumeMange .workerCon .listCon .listCenter .info,
+.creatResume .right .resumeMange .educationCon .listCon .listCenter .info {
+  width: 500px;
+  margin-left: 3px;
+  float: left;
+  min-height: 15px;
+  color: #272727;
+  border-left: 1px solid #ebebeb;
+  padding: 5px 37px 15px 24px;
+}
+.creatResume .right .resumeMange .workerCon .listCon .listCenter .info ul,
+.creatResume .right .resumeMange .educationCon .listCon .listCenter .info ul {
+  width: 100%;
+  float: left;
+  font-size: 13px;
+}
+.creatResume .right .resumeMange .workerCon .listCon .listCenter .info ul li,
+.creatResume .right .resumeMange .educationCon .listCon .listCenter .info ul li {
+  float: left;
+  height: 24px;
+  line-height: 24px;
+}
+.creatResume .right .resumeMange .workerCon .listCon .listCenter .info ul b,
+.creatResume .right .resumeMange .educationCon .listCon .listCenter .info ul b {
+  float: left;
+  padding: 0 5px;
+  height: 24px;
+  line-height: 24px;
+}
+.creatResume .right .resumeMange .workerCon .listCon .listCenter .info .con,
+.creatResume .right .resumeMange .educationCon .listCon .listCenter .info .con {
+  width: 100%;
+  float: left;
+  line-height: 24px;
+  word-break: break-all;
+  word-wrap: break-word;
+  margin-top: 5px;
+  font-size: 14px;
+}
+.creatResume .right .resumeMange .workerCon .listCon .listRight,
+.creatResume .right .resumeMange .educationCon .listCon .listRight {
+  width: 70px;
+  float: left;
+  font-size: 13px;
+  height: 24px;
+}
+.creatResume .right .resumeMange .workerCon .listCon .listRight input,
+.creatResume .right .resumeMange .educationCon .listCon .listRight input {
+  border: none;
+  text-align: center;
+  line-height: 24px;
+  height: 24px;
+  width: 60px;
+  background: none;
+}
+.creatResume .right .resumeMange .workerCon .listCon .listRight .edit,
+.creatResume .right .resumeMange .educationCon .listCon .listRight .edit {
+  float: left;
+  width: 70px;
+  height: 24px;
+  line-height: 24px;
+}
+.creatResume .right .resumeMange .workerCon .listCon .listRight .edit input,
+.creatResume .right .resumeMange .educationCon .listCon .listRight .edit input {
+  color: #98C3E6;
+  cursor: pointer;
+}
+.creatResume .right .resumeMange .workerCon .listCon .listRight .del,
+.creatResume .right .resumeMange .educationCon .listCon .listRight .del {
+  float: left;
+  width: 70px;
+  height: 24px;
+  line-height: 24px;
+}
+.creatResume .right .resumeMange .workerCon .listCon .listRight .del input,
+.creatResume .right .resumeMange .educationCon .listCon .listRight .del input {
+  color: #cfcfcf;
+  cursor: pointer;
+}
+.creatResume .right .resumeMange .languageCon {
+  margin-top: 0;
+}
+.creatResume .right .resumeMange .languageCon .listItem {
+  width: 750px;
+  float: left;
+  padding: 0 15px;
+}
+.creatResume .right .resumeMange .languageCon .listItem ul {
+  width: 100%;
+  float: left;
+}
+.creatResume .right .resumeMange .languageCon .listItem ul li {
+  float: left;
+  height: 35px;
+  line-height: 35px;
+  background: #e8f7f2;
+  margin-right: 40px;
+  margin-top: 20px;
+}
+.creatResume .right .resumeMange .languageCon .listItem ul li .name {
+  float: left;
+  color: #3d84b8;
+  font-weight: bold;
+  padding-left: 8px;
+  font-size: 15px;
+}
+.creatResume .right .resumeMange .languageCon .listItem ul li em {
+  float: left;
+  padding: 0 8px;
+  color: #e4e4e4;
+  font-style: normal;
+}
+.creatResume .right .resumeMange .languageCon .listItem ul li .degree {
+  background: #e8f7f2 url(../images/bgtag.jpg) right 0 no-repeat;
+  float: left;
+  color: #777;
+  padding-right: 16px;
+}
+.creatResume .right .resumeMange .languageCon .listItem ul li .degree .level {
+  float: left;
+  font-size: 13px;
+  color: #777;
+}
+.creatResume .right .resumeMange .otherCon {
+  margin-top: 20px;
+  width: 100%;
+  float: left;
+}
+.creatResume .right .resumeMange .otherCon .listCon {
+  width: 100%;
+  float: left;
+}
+.creatResume .right .resumeMange .otherCon .listCon .listLeft {
+  width: 115px;
+  float: left;
+  padding-right: 30px;
+  height: 24px;
+}
+.creatResume .right .resumeMange .otherCon .listCon .listLeft .listTime {
+  color: #333;
+  font-size: 13px;
+  text-align: right;
+  float: left;
+  width: 100%;
+  line-height: 24px;
+  height: 24px;
+}
+.creatResume .right .resumeMange .otherCon .listCon .listLeft .otherTit {
+  color: #272727;
+  font-weight: bold;
+  font-size: 14px;
+}
+.creatResume .right .resumeMange .otherCon .listCon .listCenter {
+  width: 565px;
+  float: left;
+}
+.creatResume .right .resumeMange .otherCon .listCon .listCenter .tit {
+  float: left;
+  height: 24px;
+  line-height: 24px;
+  overflow: hidden;
+  background: url(../images/icon3.png) -24px -108px no-repeat;
+  padding-left: 30px;
+  position: absolute;
+  width: 0;
+}
+.creatResume .right .resumeMange .otherCon .listCon .listCenter .info {
+  width: 500px;
+  margin-left: 3px;
+  float: left;
+  min-height: 15px;
+  color: #272727;
+  border-left: 1px solid #ebebeb;
+  padding: 3px 37px 30px 25px;
+}
+.creatResume .right .resumeMange .otherCon .listCon .listCenter .info p {
+  width: 100%;
+  float: left;
+  font-size: 13px;
+  white-space: normal;
+  word-break: break-all;
+}
+.creatResume .right .resumeMange .otherCon .listCon .listRight {
+  width: 70px;
+  float: left;
+  font-size: 13px;
+  height: 24px;
+}
+.creatResume .right .resumeMange .otherCon .listCon .listRight input {
+  border: none;
+  text-align: center;
+  line-height: 24px;
+  height: 24px;
+  width: 60px;
+  background: none;
+}
+.creatResume .right .resumeMange .otherCon .listCon .listRight .edit {
+  float: left;
+  width: 70px;
+  height: 24px;
+  line-height: 24px;
+}
+.creatResume .right .resumeMange .otherCon .listCon .listRight .edit input {
+  color: #98C3E6;
+  cursor: pointer;
+}
+.creatResume .right .resumeMange .otherCon .listCon .listRight .del {
+  float: left;
+  width: 70px;
+  height: 24px;
+  line-height: 24px;
+}
+.creatResume .right .resumeMange .otherCon .listCon .listRight .del input {
+  color: #cfcfcf;
+  cursor: pointer;
+}
+/*# sourceMappingURL=creatResume.css.map */

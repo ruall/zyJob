@@ -1,0 +1,227 @@
+.personInfo {
+  width: 1200px;
+  height: auto;
+  margin: 65px auto;
+  overflow: hidden;
+  border: 2px solid #efefef;
+  background-color: #fff;
+}
+.personInfo .title {
+  width: 100%;
+  height: 40px;
+  padding: 0 20px;
+  background-color: #efefef;
+  line-height: 40px;
+  font-size: 14px;
+  color: #999;
+  text-align: left;
+}
+.personInfo .title span {
+  display: inline-block;
+  text-align: left;
+  float: left;
+}
+.personInfo .title span:last-of-type {
+  text-align: right;
+  float: right;
+}
+.personInfo .top {
+  width: 100%;
+  height: 215px;
+  padding: 20px;
+}
+.personInfo .top .img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin: 20px 0;
+  float: left;
+  overflow: hidden;
+}
+.personInfo .top .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.personInfo .top .right {
+  width: calc(100% - 150px);
+  margin-left: 20px;
+  float: left;
+}
+.personInfo .top .right .name {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+.personInfo .top .right .tips {
+  width: 100%;
+  height: 30px;
+  float: left;
+  line-height: 30px;
+  font-size: 14px;
+  color: #666;
+  text-align: left;
+}
+.personInfo .top .right .address {
+  width: max-content;
+  height: 30px;
+  float: left;
+  line-height: 30px;
+  font-size: 14px;
+  color: #666;
+}
+.personInfo .top .right .address i {
+  font-style: normal;
+  color: #000;
+}
+.personInfo .top .right .address.pl20 {
+  padding-left: 20px;
+}
+.personInfo .top .right .address.last {
+  display: inline-block;
+  width: 100%;
+  float: left;
+}
+.personInfo .top .right .btnGroup {
+  width: 100%;
+  height: 50px;
+  float: left;
+}
+.personInfo .top .right .btnGroup .btn1 {
+  cursor: pointer;
+  float: left;
+  font-size: 14px;
+  color: #fff;
+  background-color: #F0514E;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin: 10px 20px 10px 0;
+}
+.personInfo .top .right .btnGroup .btn2 {
+  cursor: pointer;
+  float: left;
+  font-size: 14px;
+  color: #fff;
+  background-color: #3A9CCD;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin: 10px 20px 10px 0;
+}
+.personInfo .top .right .btnGroup .btn3 {
+  cursor: pointer;
+  float: left;
+  font-size: 14px;
+  color: #fff;
+  background-color: #4DAB4B;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin: 10px 20px 10px 0;
+}
+.personInfo .tips {
+  width: 100%;
+  height: auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.personInfo .tips .tips-title {
+  width: 100%;
+  height: 30px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+  line-height: 30px;
+}
+.personInfo .tips .tips-title i {
+  font-weight: normal;
+  font-size: 24px;
+  color: #F0514E;
+  padding-right: 10px;
+}
+.personInfo .tips .tips-content {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding-left: 35px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+.personInfo .tips .tips-content ul li {
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #333;
+}
+.personInfo .tips .tips-content ul li span:nth-of-type(1) {
+  color: #999;
+}
+.personInfo .tips .tips-content p {
+  font-size: 14px;
+  color: #4c4c4c;
+  line-height: 30px;
+  text-align: left;
+}
+.personInfo .tips .tips-content .workList {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #e6e6e6;
+}
+.personInfo .tips .tips-content .workList:not(:first-of-type) {
+  padding-top: 20px;
+}
+.personInfo .tips .tips-content .workList:last-of-type {
+  border-bottom: 0;
+}
+.personInfo .tips .tips-content .time {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #999;
+}
+.personInfo .tips .tips-content .tips-job {
+  width: 100%;
+  line-height: 30px;
+  font-size: 14px;
+  float: left;
+}
+.personInfo .tips .tips-content .tips-job strong {
+  color: #36b1c0;
+  font-size: 16px;
+  float: left;
+}
+.personInfo .tips .tips-content .tips-job i {
+  padding: 0 10px;
+  color: #ccc;
+  float: left;
+  font-style: normal;
+}
+.personInfo .tips .tips-content .tips-job span {
+  color: #999;
+  float: left;
+}
+.personInfo .tips .tips-content .duties {
+  width: 100%;
+  float: left;
+  font-size: 14px;
+  line-height: 30px;
+}
+.personInfo .tips .tips-content .duties span {
+  color: #999;
+  float: left;
+}
+.personInfo .tips .tips-content .duties span.served {
+  color: #4c4c4c;
+  float: left;
+}
+.personInfo .tips .tips-content .duties i {
+  padding: 0 10px;
+  color: #ccc;
+  float: left;
+}
+/*# sourceMappingURL=personInfo.css.map */

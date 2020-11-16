@@ -1,0 +1,326 @@
+.news {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding-top: 65px;
+}
+.news .newsList {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 10px;
+  overflow: hidden;
+}
+.news .newsList .hotList {
+  width: 850px;
+  height: 300px;
+  float: left;
+}
+.news .newsList .hotList .title {
+  width: 100%;
+  height: 49px;
+  line-height: 49px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 22px;
+  color: #000;
+  text-indent: 20px;
+  position: relative;
+}
+.news .newsList .hotList .title:after {
+  content: '';
+  width: 4px;
+  height: 20px;
+  background-color: #02b2b5;
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+.news .newsList .hotList .title .left {
+  display: inline-block;
+  width: 80%;
+  float: left;
+  text-align: left;
+}
+.news .newsList .hotList .title .right {
+  cursor: pointer;
+  display: inline-block;
+  width: 20%;
+  font-size: 16px;
+  float: left;
+  text-align: right;
+  color: #666;
+}
+.news .newsList .hotList .content {
+  width: 100%;
+  height: 250px;
+}
+.news .newsList .hotList .content ul li {
+  cursor: pointer;
+  width: 31%;
+  height: 220px;
+  float: left;
+  margin-left: 1.5%;
+  margin-top: 20px;
+}
+.news .newsList .hotList .content ul li img {
+  width: 100%;
+  height: 180px;
+}
+.news .newsList .hotList .content ul li span {
+  display: inline-block;
+  width: 100%;
+  line-height: 30px;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}
+.news .newsList .hotList .content ul li:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 0.5s;
+}
+.news .newsList .hotJob {
+  width: 300px;
+  height: 300px;
+  float: right;
+}
+.news .newsList .hotJob .title {
+  width: 100%;
+  height: 49px;
+  line-height: 49px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 22px;
+  color: #000;
+  text-indent: 20px;
+  position: relative;
+}
+.news .newsList .hotJob .title:after {
+  content: '';
+  width: 4px;
+  height: 20px;
+  background-color: #02b2b5;
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+.news .newsList .hotJob .title .left {
+  display: inline-block;
+  width: 80%;
+  float: left;
+  text-align: left;
+}
+.news .newsList .hotJob .content {
+  width: 100%;
+  height: 250px;
+}
+.news .newsList .hotJob .content ul li {
+  width: 100%;
+  height: 90px;
+  margin-top: 20px;
+  float: left;
+  cursor: pointer;
+}
+.news .newsList .hotJob .content ul li img {
+  width: 110px;
+  height: 90px;
+  float: left;
+}
+.news .newsList .hotJob .content ul li span {
+  display: inline-block;
+  width: calc(100% - 150px);
+  margin-left: 20px;
+  float: left;
+  font-size: 14px;
+}
+.news .newsList .hotJob .content ul li span:nth-of-type(1) {
+  color: #353535;
+  margin-top: 10px;
+  line-height: 20px;
+}
+.news .newsList .hotJob .content ul li span:nth-of-type(2) {
+  color: #ff6537;
+  margin-top: 15px;
+}
+.news .news-list {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 10px;
+  overflow: hidden;
+}
+.news .news-list .hotList {
+  width: 850px;
+  height: 100%;
+  float: left;
+}
+.news .news-list .hotList .title {
+  width: 100%;
+  height: 49px;
+  line-height: 49px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 22px;
+  color: #000;
+  text-indent: 20px;
+  position: relative;
+}
+.news .news-list .hotList .title:after {
+  content: '';
+  width: 4px;
+  height: 20px;
+  background-color: #02b2b5;
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+.news .news-list .hotList .title .left {
+  display: inline-block;
+  width: 80%;
+  float: left;
+  text-align: left;
+}
+.news .news-list .hotList .title .right {
+  cursor: pointer;
+  display: inline-block;
+  width: 20%;
+  font-size: 16px;
+  float: left;
+  text-align: right;
+  color: #666;
+}
+.news .news-list .hotList .content-list {
+  width: 100%;
+}
+.news .news-list .hotList .content-list ul li {
+  float: left;
+  cursor: pointer;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  position: relative;
+}
+.news .news-list .hotList .content-list ul li:after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #e5e5e5;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+}
+.news .news-list .hotList .content-list ul li:last-of-type:after {
+  content: '';
+  border: 0;
+}
+.news .news-list .hotList .content-list ul li img {
+  width: 135px;
+  height: 100px;
+  float: left;
+}
+.news .news-list .hotList .content-list ul li span {
+  display: inline-block;
+  width: calc(100% - 145px);
+  float: left;
+  margin-left: 10px;
+}
+.news .news-list .hotList .content-list ul li span:first-of-type {
+  font-size: 15px;
+  color: #212121;
+  line-height: 30px;
+}
+.news .news-list .hotList .content-list ul li span:last-of-type {
+  padding-top: 10px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #797979;
+}
+.news .news-list .hotList .content-list ul li:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  transition: box-shadow 0.5s;
+}
+.news .news-list .hotJob {
+  width: 300px;
+  height: 300px;
+  float: right;
+}
+.news .news-list .hotJob .title {
+  width: 100%;
+  height: 49px;
+  line-height: 49px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 22px;
+  color: #000;
+  text-indent: 20px;
+  position: relative;
+}
+.news .news-list .hotJob .title:after {
+  content: '';
+  width: 4px;
+  height: 20px;
+  background-color: #02b2b5;
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+.news .news-list .hotJob .title .left {
+  display: inline-block;
+  width: 80%;
+  float: left;
+  text-align: left;
+}
+.news .news-list .hotJob .content {
+  width: 100%;
+  height: 250px;
+}
+.news .news-list .hotJob .content .swiper-container {
+  cursor: pointer;
+  width: 100%;
+  height: 250px;
+  margin: 15px auto;
+  border-radius: 3px;
+}
+.news .news-list .hotJob .content .swiper-container img {
+  width: 100%;
+  height: 260px;
+}
+.news .news-list .hotJob .content .swiper-container span {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 25px;
+  margin-top: 10px;
+  color: #666;
+}
+.news .news-list .hotJob .content .swiper-pagination {
+  padding-top: 20px;
+}
+.news .news-list .hotJob .content .swiper-pagination-bullets {
+  bottom: 0;
+}
+.news .news-list .hotJob .content .swiper-pagination-bullet-active {
+  background: #02b2b5;
+}
+.info-content {
+  width: 1200px;
+  padding: 20px;
+  margin: 65px auto;
+  background-color: #fff;
+}
+.info-content h3 {
+  font-weight: normal;
+  font-size: 18px;
+  color: #666;
+  text-align: center;
+  line-height: 50px;
+  padding-bottom: 20px;
+}
+.info-content p {
+  font-size: 14px;
+  color: #999;
+  line-height: 30px;
+  text-align: left;
+  text-indent: 28px;
+  padding-bottom: 20px;
+}
+/*# sourceMappingURL=newsList.css.map */

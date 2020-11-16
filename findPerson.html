@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>找人才</title>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_2180701_641vovyc8f.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/findPerson.css">
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="left"><span>人才招聘</span></div>
+        <div class="right">
+            <ul>
+                <li>首页</li>
+                <li>找工作</li>
+                <li class="cur">找人才</li>
+                <li>社区</li>
+                <li>会员登录</li>
+                <li class="search">
+                    <span><input type="text" placeholder="普工、销售、客服"></span>
+                    <i class="iconfont icon-search1"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div class="nav-img"><img src="./images/img4.png" alt=""></div>
+
+<div class="job-list" id="jobList" v-cloak>
+    <div class="condition">
+        <div class="head">
+            <span>您已选择：</span>
+            <span>不限</span>
+            <span>全部清除</span>
+        </div>
+        <div class="list">
+            <ul>
+                <li>
+                    <dl>
+                        <dt>工作地区</dt>
+                        <dd v-for="item in addressList" @click="conditionList.address = item.value" :class="{cur:item.value===conditionList.address}">{{item.label}}</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>工作年限</dt>
+                        <dd v-for="item in welfareList" @click="conditionList.welfare = item.value" :class="{cur:item.value===conditionList.welfare}">{{item.label}}</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>年龄</dt>
+                        <dd v-for="item in salaryList" @click="conditionList.salary = item.value" :class="{cur:item.value===conditionList.salary}">{{item.label}}</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>其他</dt>
+                        <dd>
+                            <el-cascader
+                                    placeholder="工作岗位不限"
+                                    :options="options"
+                                    :props="{ multiple: true }"
+                                    size="mini"
+                                    collapse-tags
+                                    :show-all-levels="false">
+                            </el-cascader>
+                        </dd>
+                        <dd>
+                            <el-select v-model="sex" placeholder="性别" size="small">
+                                <el-option
+                                        v-for="item in options1"
+                                        :key="item.value"
+                                        :label="item.label"
+                                        :value="item.value">
+                                </el-option>
+                            </el-select>
+                        </dd>
+                        <dd>
+                            <el-select v-model="education" placeholder="学历" size="small">
+                                <el-option
+                                        v-for="item in options3"
+                                        :key="item.value"
+                                        :label="item.label"
+                                        :value="item.value">
+                                </el-option>
+                            </el-select>
+                        </dd>
+                        <dd>
+                            <el-select v-model="workYear" placeholder="现居住地" size="small">
+                                <el-option
+                                        v-for="item in options2"
+                                        :key="item.value"
+                                        :label="item.label"
+                                        :value="item.value">
+                                </el-option>
+                            </el-select>
+                        </dd>
+                        <dd>
+                            <el-select v-model="workYear" placeholder="户籍地址" size="small">
+                                <el-option
+                                        v-for="item in options4"
+                                        :key="item.value"
+                                        :label="item.label"
+                                        :value="item.value">
+                                </el-option>
+                            </el-select>
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="workList">
+        <div class="list">
+            <div class="head">
+                <div class="left">共有<i>4000+</i>职位</div>
+                <div class="right">
+                    <el-select v-model="select1" placeholder="智能排序" size="small">
+                        <el-option
+                                v-for="item in options5"
+                                :key="item.value"
+                                :label="item.label"
+                                :value="item.value">
+                        </el-option>
+                    </el-select>
+                </div>
+            </div>
+            <div class="info-list">
+                <el-table
+                        ref="multipleTable"
+                        :data="tableData"
+                        tooltip-effect="dark"
+                        style="width: 100%"
+                        @selection-change="handleSelectionChange">
+                    <el-table-column
+                            align="center"
+                            type="selection"
+                            width="55">
+                    </el-table-column>
+                    <el-table-column
+                            align="center"
+                            prop="name"
+                            label="姓名"
+                            width="120">
+                    </el-table-column>
+                    <el-table-column
+                            align="center"
+                            label="基本资料"
+                            show-overflow-tooltip>
+                        <template slot-scope="scope">{{ scope.row.info }}</template>
+                    </el-table-column>
+                    <el-table-column
+                            align="center"
+                            prop="job"
+                            label="意向岗位"
+                            show-overflow-tooltip>
+                    </el-table-column>
+                    <el-table-column
+                            align="center"
+                            prop="address"
+                            label="工作地址"
+                            show-overflow-tooltip>
+                    </el-table-column>
+                    <el-table-column
+                            align="center"
+                            label="更新时间"
+                            width="120">
+                        <template slot-scope="scope">{{ scope.row.date }}</template>
+                    </el-table-column>
+                </el-table>
+            </div>
+        </div>
+    </div>
+    <el-pagination
+            background
+            layout="prev, pager, next"
+            :total="1000">
+    </el-pagination>
+</div>
+
+
+
+<footer>
+    <div class="top">
+        <ul>
+            <li>
+                <i class="iconfont icon-mianfei"></i>
+                <span>免费求职</span>
+                <span>企业直招 不收取任何费用</span>
+            </li>
+            <li>
+                <i class="iconfont icon-jingzhun"></i>
+                <span>专业招聘</span>
+                <span>专人服务 入职速度更快</span>
+            </li>
+            <li>
+                <i class="iconfont icon-you"></i>
+                <span>优质服务</span>
+                <span>企业社区问答 免费信贷</span>
+            </li>
+            <li>
+                <i class="iconfont icon-ren-huawuyuan"></i>
+                <span>服务热线 : 000-000-0000</span>
+                <span>求职QQ群：258506508</span>
+            </li>
+        </ul>
+    </div>
+    <div class="foot">
+        <div class="bottom">
+            <div class="left">
+                <i class="iconfont icon-fuwurexian"></i>
+                <span>服务热线</span>
+                <span>000-000-00000</span>
+                <span>工作日：9：00-19：00</span>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>
+                        <dl>
+                            <dt><a href="#">网站首页</a></dt>
+                            <dd><a href="#">销售/文员</a></dd>
+                            <dd><a href="#">普工/技工</a></dd>
+                            <dd><a href="#">普工/技工</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><a href="#">找工作</a></dt>
+                            <dd><a href="#">求职流程</a></dd>
+                            <dd><a href="#">企业推荐</a></dd>
+                            <dd><a href="#">前沿岗位</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><a href="#">社区</a></dt>
+                            <dd><a href="#">热门文章</a></dd>
+                            <dd><a href="#">前沿资讯</a></dd>
+                            <dd><a href="#">求职帮助</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script src="./js/findPerson.js"></script>
+</body>
+</html>

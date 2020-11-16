@@ -1,0 +1,618 @@
+.creatResume{
+  width: 1200px;
+  height: auto;
+  overflow: hidden;
+  margin: 60px auto;
+  .left{
+    width: 190px;
+    height: 100%;
+    float: left;
+    ul{
+      float: left;
+      width: 192px;
+      background: #FFFFFF;
+      margin-bottom: 20px;
+      position: relative;
+      li{
+        width: 192px;
+        height: 38px;
+        line-height: 38px;
+        border-bottom: #F1F1F1 1px solid;
+        position: relative;
+        cursor: pointer;
+        font-size: 14px;
+        text-align: center;
+        color: #666;
+        &:hover,&.cur {
+          background-color: #EFEFEF;
+          &:after{
+            content: '';
+            width: 4px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #F0504E;
+          }
+        }
+      }
+    }
+  }
+  .right{
+    float: left;
+    margin-left: 28px;
+    width: 980px;
+    background: #FFFFFF;
+    border-top: #EFEFEF 4px solid;
+    min-height: 660px;
+    border-radius: 0px 0px 9px 9px;
+    padding-bottom: 9px;
+    .rightMain{
+      width: 900px;
+      padding: 10px 40px;
+      float: left;
+      font-size: 14px;
+      .title{
+        width: 100%;
+        height: 34px;
+        line-height: 34px;
+        margin-top: 20px;
+        float: left;
+        font-size: 16px;
+        color: #1f548c;
+        padding-left: 5px;
+        font-weight: 600;
+        border-bottom: 2px solid #f1f1f1;
+      }
+      .jobInfo{
+        width: 100%;
+        float: left;
+        margin-top: 20px;
+        .price{
+          font-size: 14px;
+          color: #666;
+        }
+      }
+    }
+    .personInfo{
+      width: 900px;
+      padding: 30px 30px 0 30px;
+      float: left;
+      font-size: 14px;
+      .bLfet{
+        width: 144px;
+        height: 142px;
+        float: left;
+        background: url("../images/head.jpg") no-repeat;
+        cursor: pointer;
+      }
+      .bRight{
+        width: 634px;
+        margin-left: 2px;
+        float: left;
+        .basicName{
+          width: 604px;
+          margin-left: 30px;
+          height: 36px;
+          float: left;
+          line-height: 28px;
+          border-bottom: 1px solid #F2F2F2;
+          .resumeTit{
+            width: 100%;
+            float: left;
+            height: 28px;
+            h2{
+              margin-right: 15px;
+              float: left;
+              font-size: 22px;
+              color: #333;
+            }
+            .resumeEdit{
+              float: left;
+              height: 28px;
+              line-height: 28px;
+              a{
+                float: left;
+                color: #98C3E6;
+                font-size: 13px;
+                i{
+                  background: url(../images/icon3.png) 0px -48px no-repeat;
+                  margin-top: 3px;
+                  width: 24px;
+                  height: 24px;
+                  float: left;
+                }
+              }
+            }
+          }
+        }
+        .bInfo{
+          float: left;
+          width: 604px;
+          margin-left: 30px;
+          ul{
+            width: 100%;
+            float: left;
+            margin-top: 8px;
+            height: 24px;
+            li{
+              margin-right: 30px;
+              float: left;
+              height: 24px;
+              line-height: 24px;
+              font-size: 13px;
+              color: #333;
+              i{
+                background: url(../images/icon3.png) no-repeat;
+                float: left;
+                &.sex_f{
+                  background-position: -149px -72px;
+                  width: 16px;
+                  height: 14px;
+                  margin-top: 5px;
+                }
+                &.age{
+                  background-position: -63px 0px;
+                  width: 16px;
+                  height: 14px;
+                  margin-top: 5px;
+                }
+                &.work{
+                  background-position: -127px 0px;
+                  width: 16px;
+                  height: 14px;
+                  margin-top: 5px;
+                }
+                &.map{
+                  background-position: -90px 0px;
+                  width: 12px;
+                  height: 14px;
+                  margin-top: 5px;
+                }
+              }
+            }
+          }
+          dl{
+            width: 100%;
+            float: left;
+            margin-top: 5px;
+            height: 24px;
+            font-size: 13px;
+            color: #333;
+            &.supp1{
+              font-size: 14px;
+              color: #272727;
+            }
+            dt{
+              float: left;
+              height: 24px;
+              line-height: 24px;
+            }
+            dd{
+              float: left;
+              height: 24px;
+              line-height: 24px;
+              margin-right: 30px;
+            }
+          }
+        }
+        .contact{
+          width: 632px;
+          float: left;
+          background: #fafafa;
+          margin-top: 5px;
+          border-radius: 5px;
+          height: 42px;
+          border: 1px solid #f1f1f1;
+          .info{
+            float: left;
+            padding: 0 10px;
+            margin-top: 12px;
+            height: 20px;
+            line-height: 20px;
+            color: #999;
+            margin-left: 15px;
+            i{
+              background: url(../images/icon3.png) -93px -48px no-repeat;
+              margin-top: 2px;
+              float: left;
+              width: 17px;
+              height: 16px;
+            }
+            strong{
+              font-size: 16px;
+              color: #3d84b8;
+            }
+            .phoneAddr{
+              color: #999;
+              font-size: 13px;
+            }
+          }
+          .bEmail{
+            color: #3d84b8;
+            font-size: 13px;
+            float: left;
+            height: 20px;
+            line-height: 20px;
+            border-left: 1px solid #d9d9d9;
+            padding-left: 15px;
+            margin-top: 12px;
+          }
+        }
+      }
+    }
+    .resumeMange{
+      width: 100%;
+      padding: 30px 30px 0 30px;
+      float: left;
+      .resumeTit{
+        width: 100%;
+        float: left;
+        height: 28px;
+        h2{
+          margin-right: 15px;
+          float: left;
+          font-size: 18px;
+          color: #333;
+        }
+        .resumeEdit{
+          float: left;
+          height: 28px;
+          line-height: 28px;
+          a{
+            cursor: pointer;
+            float: left;
+            color: #98C3E6;
+            font-size: 13px;
+            &:hover{
+              color: #C2332F;
+              text-decoration: none;
+              i{
+                background: url(../images/icon3.png) 0px -79px no-repeat;
+              }
+            }
+            i{
+              background: url(../images/icon3.png) 0px -48px no-repeat;
+              margin-top: 3px;
+              width: 24px;
+              height: 24px;
+              float: left;
+            }
+          }
+        }
+      }
+      .objectiveCon{
+        width: 100%;
+        float: left;
+        margin-top: 10px;
+        padding: 0 20px;
+        font-size: 13px;
+        dl{
+          width: 370px;
+          float: left;
+          height: 36px;
+          line-height: 36px;
+          dt{
+            width: 70px;
+            float: left;
+            color: #999;
+          }
+          dd{
+            width: 300px;
+            float: left;
+            color: #333;
+          }
+        }
+      }
+      .resumeMangeCon{
+        margin-top: 20px;
+        width: 100%;
+        float: left;
+        .listCon{
+          width: 100%;
+          float: left;
+          .listLeft{
+            width: 115px;
+            float: left;
+            padding-right: 30px;
+            height: 24px;
+            .listTime{
+              color: #333;
+              font-size: 13px;
+              text-align: right;
+              float: left;
+              width: 100%;
+              line-height: 24px;
+              height: 24px;
+            }
+          }
+          .listCenter{
+            width: 765px;
+            float: left;
+            .info{
+              width: 700px;
+              margin-left: 0;
+              float: left;
+              min-height: 15px;
+              color: #272727;
+              border-left: 1px solid #ebebeb;
+              padding: 5px 37px 15px 24px;
+              .con{
+                width: 100%;
+                float: left;
+                line-height: 24px;
+                word-break: break-all;
+              }
+            }
+          }
+        }
+      }
+      .objectiveInput,.resumeMangeInput{
+        width: 750px;
+        float: left;
+        padding: 20px 15px 40px 15px;
+        background: #FAFAFA;
+        margin-top: 10px;
+        .el-range-separator{
+          width: 15%;
+        }
+      }
+      .workerCon,.educationCon{
+        margin-top: 15px;
+        width: 100%;
+        float: left;
+        .listCon {
+          width: 100%;
+          float: left;
+          .listLeft {
+            width: 145px;
+            float: left;
+            padding-right: 30px;
+            height: 24px;
+            .listTime {
+              color: #333;
+              font-size: 13px;
+              text-align: right;
+              float: left;
+              width: 100%;
+              line-height: 24px;
+              height: 24px;
+            }
+          }
+          .listCenter {
+            width: 565px;
+            float: left;
+            .tit {
+              width: 535px;
+              float: left;
+              height: 24px;
+              line-height: 24px;
+              overflow: hidden;
+              background: url(../images/icon3.png) -24px -108px no-repeat;
+              padding-left: 30px;
+              strong {
+                float: left;
+                color: #3d84b8;
+                overflow: hidden;
+              }
+              b {
+                float: left;
+                padding: 0 10px;
+                color: #e4e4e4;
+              }
+              span {
+                float: left;
+                color: #3d84b8;
+              }
+            }
+            .info {
+              width: 500px;
+              margin-left: 3px;
+              float: left;
+              min-height: 15px;
+              color: #272727;
+              border-left: 1px solid #ebebeb;
+              padding: 5px 37px 15px 24px;
+              ul {
+                width: 100%;
+                float: left;
+                font-size: 13px;
+                li {
+                  float: left;
+                  height: 24px;
+                  line-height: 24px;
+                }
+                b {
+                  float: left;
+                  padding: 0 5px;
+                  height: 24px;
+                  line-height: 24px;
+                }
+              }
+              .con {
+                width: 100%;
+                float: left;
+                line-height: 24px;
+                word-break: break-all;
+                word-wrap: break-word;
+                margin-top: 5px;
+                font-size: 14px;
+              }
+            }
+          }
+          .listRight {
+            width: 70px;
+            float: left;
+            font-size: 13px;
+            height: 24px;
+            input {
+              border: none;
+              text-align: center;
+              line-height: 24px;
+              height: 24px;
+              width: 60px;
+              background: none;
+            }
+            .edit {
+              float: left;
+              width: 70px;
+              height: 24px;
+              line-height: 24px;
+              input {
+                color: #98C3E6;
+                cursor: pointer;
+              }
+            }
+            .del {
+              float: left;
+              width: 70px;
+              height: 24px;
+              line-height: 24px;
+              input {
+                color: #cfcfcf;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+      .languageCon{
+        margin-top: 0;
+        .listItem {
+          width: 750px;
+          float: left;
+          padding: 0 15px;
+          ul {
+            width: 100%;
+            float: left;
+            li {
+              float: left;
+              height: 35px;
+              line-height: 35px;
+              background: #e8f7f2;
+              margin-right: 40px;
+              margin-top: 20px;
+              .name {
+                float: left;
+                color: #3d84b8;
+                font-weight: bold;
+                padding-left: 8px;
+                font-size: 15px;
+              }
+              em {
+                float: left;
+                padding: 0 8px;
+                color: #e4e4e4;
+                font-style: normal;
+              }
+              .degree {
+                background: #e8f7f2 url(../images/bgtag.jpg) right 0 no-repeat;
+                float: left;
+                color: #777;
+                padding-right: 16px;
+                .level {
+                  float: left;
+                  font-size: 13px;
+                  color: #777;
+                }
+              }
+            }
+          }
+        }
+      }
+      .otherCon {
+        margin-top: 20px;
+        width: 100%;
+        float: left;
+        .listCon {
+          width: 100%;
+          float: left;
+          .listLeft {
+            width: 115px;
+            float: left;
+            padding-right: 30px;
+            height: 24px;
+            .listTime {
+              color: #333;
+              font-size: 13px;
+              text-align: right;
+              float: left;
+              width: 100%;
+              line-height: 24px;
+              height: 24px;
+            }
+            .otherTit {
+              color: #272727;
+              font-weight: bold;
+              font-size: 14px;
+            }
+          }
+          .listCenter {
+            width: 565px;
+            float: left;
+            .tit {
+              float: left;
+              height: 24px;
+              line-height: 24px;
+              overflow: hidden;
+              background: url(../images/icon3.png) -24px -108px no-repeat;
+              padding-left: 30px;
+              position: absolute;
+              width: 0;
+            }
+            .info {
+              width: 500px;
+              margin-left: 3px;
+              float: left;
+              min-height: 15px;
+              color: #272727;
+              border-left: 1px solid #ebebeb;
+              padding: 3px 37px 30px 25px;
+              p {
+                width: 100%;
+                float: left;
+                font-size: 13px;
+                white-space: normal;
+                word-break: break-all;
+              }
+            }
+          }
+          .listRight {
+            width: 70px;
+            float: left;
+            font-size: 13px;
+            height: 24px;
+            input {
+              border: none;
+              text-align: center;
+              line-height: 24px;
+              height: 24px;
+              width: 60px;
+              background: none;
+            }
+            .edit {
+              float: left;
+              width: 70px;
+              height: 24px;
+              line-height: 24px;
+              input {
+                color: #98C3E6;
+                cursor: pointer;
+              }
+            }
+            .del {
+              float: left;
+              width: 70px;
+              height: 24px;
+              line-height: 24px;
+              input {
+                color: #cfcfcf;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

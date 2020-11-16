@@ -1,0 +1,267 @@
+[v-cloak] {
+  display: none !important;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+html,
+body {
+  color: #000;
+  background: #fbfbfb;
+  width: 100%;
+}
+input,
+select,
+button {
+  font-size: 100%;
+  outline: 0;
+  vertical-align: middle;
+  -webkit-appearance: none;
+}
+button {
+  border: 0;
+  background-clip: padding-box;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+/* 定义图片边框，当图片作为链接内容被填充时，会有默认边框出现，重定义掉 */
+img {
+  border: none;
+  vertical-align: baseline;
+}
+a,
+a:link,
+a:visited {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+/* 标签属性，textarea,input 强制输入时内容超出时换行，打断 */
+textarea,
+input {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+span,
+p,
+div {
+  word-wrap: break-word;
+}
+.lf {
+  float: left;
+}
+.rt {
+  float: right;
+}
+.clearfix {
+  content: '';
+  display: block;
+  clear: both;
+}
+header {
+  width: 100%;
+  min-width: 1200px;
+  height: 120px;
+  background-color: #02b2b5;
+}
+header .header {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+}
+header .header .left {
+  float: left;
+  height: 120px;
+  line-height: 120px;
+  text-align: left;
+}
+header .header .left span {
+  font-size: 32px;
+  color: #fff;
+  cursor: pointer;
+}
+header .header .right {
+  float: right;
+}
+header .header .right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+header .header .right ul li {
+  cursor: pointer;
+  font-size: 16px;
+  float: left;
+  line-height: 40px;
+  text-align: center;
+  width: 90px;
+  margin: 40px 10px;
+  padding: 0;
+  color: #fff;
+}
+header .header .right ul li.cur,
+header .header .right ul li:hover {
+  background-color: #fff;
+  color: #26a59a;
+  border-radius: 5px;
+  transition: all 0.4s;
+}
+header .header .right ul li.search {
+  width: 195px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 38px;
+}
+header .header .right ul li.search span {
+  display: flex;
+  width: 128px;
+  height: 40px;
+  float: left;
+}
+header .header .right ul li.search span input {
+  border: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  font-size: 14px;
+  margin-left: 17px;
+}
+header .header .right ul li.search i {
+  display: block;
+  float: left;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 25px;
+  margin-left: 10px;
+  color: #26a59a;
+}
+.nav-img {
+  width: 100%;
+  min-width: 1200px;
+  height: 350px;
+  overflow: hidden;
+}
+.nav-img img {
+  width: 100%;
+  height: 100%;
+}
+footer {
+  margin-top: 80px;
+  width: 100%;
+  min-width: 1200px;
+  height: 350px;
+}
+footer .top {
+  width: 100%;
+  height: 70px;
+  background-color: #02b2b5;
+}
+footer .top ul {
+  width: 1200px;
+  height: 70px;
+  margin: 0 auto;
+}
+footer .top ul li {
+  width: 25%;
+  line-height: 70px;
+  float: left;
+  color: #fff;
+}
+footer .top ul li i {
+  display: inline-block;
+  font-size: 36px;
+  width: 40px;
+  float: left;
+}
+footer .top ul li span {
+  cursor: pointer;
+  display: inline-block;
+  width: calc(100% - 40px);
+  float: left;
+}
+footer .top ul li span:nth-of-type(1) {
+  float: left;
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+footer .top ul li span:nth-of-type(2) {
+  float: left;
+  font-size: 13px;
+  line-height: 20px;
+  padding-left: 10px;
+}
+footer .foot {
+  width: 1200px;
+  height: 250px;
+  margin: 0 auto;
+}
+footer .foot .bottom .left {
+  width: 200px;
+  height: 250px;
+  float: left;
+  text-align: center;
+  margin-left: 250px;
+}
+footer .foot .bottom .left i {
+  padding-top: 50px;
+  font-size: 56px;
+  font-weight: bold;
+  color: #02b2b5;
+  display: inline-block;
+}
+footer .foot .bottom .left span {
+  display: inline-block;
+  width: 100%;
+  line-height: 25px;
+  font-size: 14px;
+  color: #808080;
+}
+footer .foot .bottom .right {
+  width: 480px;
+  height: 250px;
+  float: left;
+}
+footer .foot .bottom .right ul li {
+  text-align: center;
+  width: 160px;
+  height: 250px;
+  float: left;
+}
+footer .foot .bottom .right ul li dl dt {
+  line-height: 30px;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+footer .foot .bottom .right ul li dl dt a {
+  font-size: 18px;
+  color: #808080;
+}
+footer .foot .bottom .right ul li dl dd {
+  line-height: 22px;
+}
+footer .foot .bottom .right ul li dl dd a {
+  font-size: 12px;
+  color: #808080;
+}
+/*# sourceMappingURL=main.css.map */

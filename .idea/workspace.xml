@@ -19,7 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="a2a6b272-6f19-46f8-8a82-6ebac8c6e6a9" name="Default Changelist" comment="1" />
+=======
+    <list default="true" id="a2a6b272-6f19-46f8-8a82-6ebac8c6e6a9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/images/Git-2.29.2.2-64-bit.exe" beforeDir="false" />
+    </list>
+>>>>>>> edca2816666e81113afd471d840903a53172e9e7
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,6 +88,7 @@
       <workItem from="1605056537180" duration="14660000" />
       <workItem from="1605142647565" duration="17890000" />
       <workItem from="1605230551598" duration="3792000" />
+<<<<<<< HEAD
       <workItem from="1605492692843" duration="10495000" />
       <workItem from="1605513138039" duration="1708000" />
       <workItem from="1605519060615" duration="213000" />
@@ -92,6 +99,10 @@
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
       <updated>1605519090844</updated>
+=======
+      <workItem from="1605492692843" duration="9547000" />
+      <workItem from="1605609731982" duration="32000" />
+>>>>>>> edca2816666e81113afd471d840903a53172e9e7
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
@@ -109,11 +120,14 @@
         </entry>
       </map>
     </option>
+<<<<<<< HEAD
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1" />
     <option name="LAST_COMMIT_MESSAGE" value="1" />
+=======
+>>>>>>> edca2816666e81113afd471d840903a53172e9e7
   </component>
   <component name="WindowStateProjectService">
     <state x="844" y="353" key="#File_Watchers" timestamp="1604473870067">

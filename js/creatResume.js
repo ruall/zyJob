@@ -55,6 +55,18 @@ var vm = new Vue({
             disc:'',
             desc:''
         },
+        ruleForm6:[
+            {
+                name:'',
+                status:'',
+                rank:'',
+            },
+            {
+                name:'',
+                status:'',
+                rank:'',
+            }
+        ],
         rules: {
             name: [
                 { required: true, message: '请输入姓名', trigger: 'blur' },

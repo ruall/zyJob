@@ -19,12 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2a6b272-6f19-46f8-8a82-6ebac8c6e6a9" name="Default Changelist" comment="1">
+    <list default="true" id="a2a6b272-6f19-46f8-8a82-6ebac8c6e6a9" name="Default Changelist" comment="中文简历页面">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/creatResume.html" beforeDir="false" afterPath="$PROJECT_DIR$/creatResume.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/creatResume.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/creatResume.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/creatResume.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/creatResume.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/creatResume.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/creatResume.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/creatResume.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/creatResume.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +89,7 @@
       <workItem from="1605609731982" duration="32000" />
       <workItem from="1605610833988" duration="2457000" />
       <workItem from="1606119932241" duration="454000" />
-      <workItem from="1606181161933" duration="13300000" />
+      <workItem from="1606181161933" duration="15839000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1606119986849</created>
@@ -101,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606119986849</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="中文简历页面">
+      <created>1606207485519</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606207485519</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,7 +125,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="中文简历页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="中文简历页面" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1063" y="550" key="#Configure_Path_Variables" timestamp="1605610843447">
@@ -157,10 +162,10 @@
     </state>
     <state x="638" y="200" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606119975626" />
     <state x="1041" y="228" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1605610975835" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606120190623">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606207487657">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606120190623" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606207487657" />
     <state x="812" y="455" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606181166772">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

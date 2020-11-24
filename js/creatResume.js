@@ -1,7 +1,44 @@
 var vm = new Vue({
     el:'#creatResume',
     data:{
-        dialogOpen:false,
+        dialogOpen:[
+            {
+                checked:false,
+                index:1
+            },
+            {
+                checked:false,
+                index:2
+            },
+            {
+                checked:false,
+                index:3
+            },
+            {
+                checked:false,
+                index:4
+            },
+            {
+                checked:false,
+                index:5
+            },
+            {
+                checked:false,
+                index:6
+            },
+            {
+                checked:false,
+                index:7
+            },
+            {
+                checked:false,
+                index:8
+            },
+            {
+                checked:false,
+                index:9
+            },
+        ],
         ruleForm: {
             name: '',
             sex:0,
@@ -34,10 +71,10 @@ var vm = new Vue({
         },
         ruleForm3:{
             name:'萨达',
-            nature:0,
-            person:1,
-            industry:2,
-            date:[2018,2020],
+            nature:'0',
+            person:'1',
+            industry:'2',
+            date:['2018-10','2020-10'],
             occName:'1231231',
             contact:'1、阿斯顿你就爱上你尽快,2、撒大家把大门扣篮啊ui前往悼念把那失败的借口案板上的那是vhd,2、撒大家把大门扣篮啊ui前往悼念把那失败的借口案板上的那是1、阿斯顿你就爱上你尽快,2、撒大家把大门扣篮啊ui前往悼念把那失败的借口案板上的那是vhd,2、撒大家把大门扣篮啊ui前往悼念把那失败的借口案板上的那是'
         },
@@ -360,8 +397,9 @@ var vm = new Vue({
                 }
             });
         },
-        resetForm(formName) {
+        resetForm(formName,v) {
             this.$refs[formName].resetFields();
+            this.dialogOpen[v].checked = false
         },
         changeV(){
             console.log(this.ruleForm3.date)
@@ -387,12 +425,11 @@ var vm = new Vue({
                 this.ruleForm8.splice(index,1)
             }
         },
-        openDialog(v,l){
-            if(v == 0){
+        openDialog(v){
+            if(v == 2){
 
-            }else{
-                this.dialogOpen = true
             }
+            this.dialogOpen[v].checked = true
         }
     }
 })

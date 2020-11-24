@@ -278,9 +278,9 @@
         <div class="resumeMange">
             <div class="resumeTit">
                 <h2>求职意向</h2>
-                <span class="resumeEdit"><a><i></i>编辑</a></span>
+                <span class="resumeEdit" @click="openDialog(1,false)"><a><i></i>编辑</a></span>
             </div>
-            <div class="objectiveCon">
+            <div v-if="!dialogOpen" class="objectiveCon">
                 <dl>
                     <dt>意向岗位:</dt>
                     <dd><span class="intentionjobs">啊啊啊</span></dd>
@@ -298,7 +298,7 @@
                     <dd><span class="jobarea">随州市</span></dd>
                 </dl>
             </div>
-            <div class="objectiveInput">
+            <div v-if="dialogOpen" class="objectiveInput">
                 <el-form :model="ruleForm1" :rules="rules1" ref="ruleForm1" label-width="100px" class="demo-ruleForm">
                     <el-form-item label="意向岗位" prop="name">
                         <el-col :span="8">
@@ -355,8 +355,8 @@
                         <el-col :span="8"><span class="price">元/月</span></el-col>
                     </el-form-item>
                     <el-form-item>
-                        <el-button type="primary" @click="submitForm1('ruleForm1')">保存</el-button>
-                        <el-button @click="resetForm1('ruleForm1')">重置</el-button>
+                        <el-button type="primary" @click="submitForm('ruleForm1')">保存</el-button>
+                        <el-button @click="resetForm('ruleForm1')">重置</el-button>
                     </el-form-item>
                 </el-form>
             </div>
@@ -366,7 +366,7 @@
                 <h2>自我评价</h2>
                 <span class="resumeEdit"><a><i></i>编辑</a></span>
             </div>
-            <div class="resumeMangeCon selfEvaluationCon">
+            <div v-if="!dialogOpen" class="resumeMangeCon selfEvaluationCon">
                 <div class="listCon">
                     <div class="listLeft"><span class="listTime">自我评价</span></div>
                     <div class="listCenter">
@@ -376,7 +376,7 @@
                     </div>
                 </div>
             </div>
-            <div class="resumeMangeInput">
+            <div v-if="dialogOpen" class="resumeMangeInput">
                 <el-form :model="ruleForm2" ref="ruleForm2" label-width="100px" class="demo-ruleForm">
                     <el-form-item label="自我评价" prop="name">
                         <el-col :span="8">
@@ -389,8 +389,8 @@
                         </el-col>
                     </el-form-item>
                     <el-form-item>
-                        <el-button type="primary" @click="submitForm2('ruleForm2')">保存</el-button>
-                        <el-button @click="resetForm2('ruleForm2')">重置</el-button>
+                        <el-button type="primary" @click="submitForm('ruleForm2')">保存</el-button>
+                        <el-button @click="resetForm('ruleForm2')">重置</el-button>
                     </el-form-item>
                 </el-form>
             </div>
@@ -400,8 +400,8 @@
                 <h2>工作经历</h2>
                 <span class="resumeEdit"><a><i></i>添加</a></span>
             </div>
-            <div class="workerCon">
-                <div class="listCon">
+            <div v-if="!dialogOpen" class="workerCon">
+                <div class="listCon" v-for="(item,index) in ">
                     <div class="listLeft"><span class="listTime"><span class="starttime">2001-01</span>~<span
                             class="endtime">2006-05</span></span></div>
                     <div class="listCenter">
@@ -460,7 +460,7 @@
                     </div>
                 </div>
             </div>
-            <div class="resumeMangeInput">
+            <div v-if="dialogOpen" class="resumeMangeInput">
                 <el-form :model="ruleForm3" ref="ruleForm3" label-width="100px" class="demo-ruleForm">
                     <el-form-item label="公司名称" required>
                         <el-col :span="8">
@@ -568,8 +568,8 @@
                         </el-col>
                     </el-form-item>
                     <el-form-item>
-                        <el-button type="primary" @click="submitForm3('ruleForm3')">保存</el-button>
-                        <el-button @click="resetForm3('ruleForm3')">重置</el-button>
+                        <el-button type="primary" @click="submitForm('ruleForm3')">保存</el-button>
+                        <el-button @click="resetForm('ruleForm3')">重置</el-button>
                     </el-form-item>
                 </el-form>
             </div>
@@ -579,7 +579,7 @@
                 <h2>教育培训经历</h2>
                 <span class="resumeEdit"><a><i></i>添加</a></span>
             </div>
-            <div class="educationCon">
+            <div v-if="!dialogOpen" class="educationCon">
                 <div class="listCon">
                     <div class="listLeft">
                         <span class="listTime">
@@ -623,7 +623,7 @@
                     </div>
                 </div>
             </div>
-            <div class="resumeMangeInput">
+            <div v-if="dialogOpen" class="resumeMangeInput">
                 <el-form :model="ruleForm4" ref="ruleForm4" label-width="100px" class="demo-ruleForm">
                     <el-form-item label="教育类型" required>
                         <el-col :span="8">
@@ -677,8 +677,8 @@
                         </el-col>
                     </el-form-item>
                     <el-form-item>
-                        <el-button type="primary" @click="submitForm4('ruleForm4')">保存</el-button>
-                        <el-button @click="resetForm4('ruleForm4')">重置</el-button>
+                        <el-button type="primary" @click="submitForm('ruleForm4')">保存</el-button>
+                        <el-button @click="resetForm('ruleForm4')">重置</el-button>
                     </el-form-item>
                 </el-form>
             </div>
@@ -688,7 +688,7 @@
                 <h2>项目经验</h2>
                 <span class="resumeEdit"><a><i></i>添加</a></span>
             </div>
-            <div class="educationCon">
+            <div v-if="!dialogOpen" class="educationCon">
                 <div class="listCon">
                     <div class="listLeft">
                         <span class="listTime">
@@ -732,7 +732,7 @@
                     </div>
                 </div>
             </div>
-            <div class="resumeMangeInput">
+            <div v-if="dialogOpen" class="resumeMangeInput">
                 <el-form :model="ruleForm5" ref="ruleForm5" label-width="100px" class="demo-ruleForm">
                     <el-form-item label="项目名称" required>
                         <el-col :span="8">
@@ -762,8 +762,8 @@
                         </el-col>
                     </el-form-item>
                     <el-form-item>
-                        <el-button type="primary" @click="submitForm5('ruleForm5')">保存</el-button>
-                        <el-button @click="resetForm5('ruleForm5')">重置</el-button>
+                        <el-button type="primary" @click="submitForm('ruleForm5')">保存</el-button>
+                        <el-button @click="resetForm('ruleForm5')">重置</el-button>
                     </el-form-item>
                 </el-form>
             </div>
@@ -773,7 +773,7 @@
                 <h2>语言能力</h2>
                 <span class="resumeEdit"><a><i></i>添加</a></span>
             </div>
-            <div class="languageCon">
+            <div v-if="!dialogOpen" class="languageCon">
                 <div class="listItem">
                     <ul>
                         <li>
@@ -828,22 +828,32 @@
                     </ul>
                 </div>
             </div>
-            <div class="resumeMangeInput">
-                <el-form :inline="true" :model="ruleForm6" ref="ruleForm6" class="demo-form-inline">
-                    <div v-for="(index,item) in ruleForm6"></div>
-                    <el-form-item label="审批人">
-                        <el-input v-model="ruleForm6.user" placeholder="审批人"></el-input>
-                    </el-form-item>
-                    <el-form-item label="活动区域">
-                        <el-select v-model="formInline.region" placeholder="活动区域">
-                            <el-option label="区域一" value="shanghai"></el-option>
-                            <el-option label="区域二" value="beijing"></el-option>
-                        </el-select>
-                    </el-form-item>
-                    <el-form-item>
-                        <el-button type="primary" @click="onSubmit">查询</el-button>
-                    </el-form-item>
-                </el-form>
+            <div v-if="dialogOpen" class="resumeMangeInput">
+                <div class="addAbility">添加您掌握的语言能力；最多可以添加6门语言</div>
+                <div class="demo-ruleForm">
+                        <div class="ruleFormClass" style="text-align: center" v-for="(n,l) in ruleForm6">
+                            <el-col :span="10">
+                                <el-select v-model="ruleForm6[l].name" placeholder="请选择语种">
+                                    <el-option :label="item.label" :value="item.value" v-for="item in language"></el-option>
+                                </el-select>
+                            </el-col>
+                            <el-col :span="10">
+                                <el-select v-model="ruleForm6[l].skill" placeholder="请选择熟练程度">
+                                    <el-option :label="item.label" :value="item.value" v-for="item in skill"></el-option>
+                                </el-select>
+                            </el-col>
+                            <el-col :span="4">
+                                <i class="el-icon-delete del" @click="delList(0,l)"></i>
+                            </el-col>
+                        </div>
+                    <div class="newList" @click="newList(0)"><i class="el-icon-circle-plus-outline"></i>添加一项</div>
+                    <div style="text-align: center">
+                        <el-col :span="24">
+                            <el-button type="primary" @click="submitForm('ruleForm6')">保存</el-button>
+                            <el-button @click="resetForm('ruleForm6')">重置</el-button>
+                        </el-col>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="resumeMange">
@@ -851,7 +861,7 @@
                 <h2>技能专长</h2>
                 <span class="resumeEdit"><a><i></i>添加</a></span>
             </div>
-            <div class="languageCon">
+            <div v-if="!dialogOpen" class="languageCon">
                 <div class="listItem">
                     <ul>
                         <li>
@@ -904,6 +914,31 @@
                             </span>
                         </li>
                     </ul>
+                </div>
+            </div>
+            <div v-if="dialogOpen" class="resumeMangeInput">
+                <div class="addAbility">添加您掌握的技能、工具或擅长的领域；最多可以添加10项技能专长</div>
+                <div class="demo-ruleForm">
+                    <div class="ruleFormClass" style="text-align: center" v-for="(n,l) in ruleForm7">
+                        <el-col :span="10">
+                            <el-input v-model="ruleForm7[l].name" placeholder="请输入技能名称"></el-input>
+                        </el-col>
+                        <el-col :span="10">
+                            <el-select v-model="ruleForm7[l].skill" placeholder="请选择熟练程度">
+                                <el-option :label="item.label" :value="item.value" v-for="item in skill"></el-option>
+                            </el-select>
+                        </el-col>
+                        <el-col :span="4">
+                            <i class="el-icon-delete del" @click="delList(1,l)"></i>
+                        </el-col>
+                    </div>
+                    <div class="newList" @click="newList(1)" style="margin-left: 0"><i class="el-icon-circle-plus-outline"></i>添加一项</div>
+                    <div style="text-align: center">
+                        <el-col :span="24">
+                            <el-button type="primary" @click="submitForm('ruleForm6')">保存</el-button>
+                            <el-button @click="resetForm('ruleForm6')">重置</el-button>
+                        </el-col>
+                    </div>
                 </div>
             </div>
         </div>
@@ -912,7 +947,7 @@
                 <h2>证书</h2>
                 <span class="resumeEdit"><a><i></i>添加</a></span>
             </div>
-            <div class="languageCon">
+            <div v-if="!dialogOpen" class="languageCon">
                 <div class="listItem">
                     <ul>
                         <li>
@@ -967,13 +1002,41 @@
                     </ul>
                 </div>
             </div>
+            <div v-if="dialogOpen" class="resumeMangeInput">
+                <div class="addAbility">添加您获得的专业技能、职业证书或职称；最多可以添加10份证书</div>
+                <div class="demo-ruleForm">
+                    <div class="ruleFormClass" style="text-align: center" v-for="(n,l) in ruleForm8">
+                        <el-col :span="10">
+                            <el-input v-model="ruleForm8[l].name" placeholder="请输入证书名称"></el-input>
+                        </el-col>
+                        <el-col :span="10">
+                            <el-date-picker
+                                    v-model="ruleForm8[l].date"
+                                    type="year"
+                                    value-format="yyyy"
+                                    placeholder="选择年份">
+                            </el-date-picker>
+                        </el-col>
+                        <el-col :span="4">
+                            <i class="el-icon-delete del" @click="delList(2,l)"></i>
+                        </el-col>
+                    </div>
+                    <div class="newList" @click="newList(2)" style="margin-left: 0"><i class="el-icon-circle-plus-outline"></i>添加一项</div>
+                    <div style="text-align: center">
+                        <el-col :span="24">
+                            <el-button type="primary" @click="submitForm('ruleForm6')">保存</el-button>
+                            <el-button @click="resetForm('ruleForm6')">重置</el-button>
+                        </el-col>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="resumeMange">
             <div class="resumeTit">
                 <h2>其他信息</h2>
                 <span class="resumeEdit"><a><i></i>添加</a></span>
             </div>
-            <div class="otherCon">
+            <div v-if="!dialogOpen" class="otherCon">
                 <div class="listCon">
                     <div class="listLeft">
                         <span class="listTime otherTit">获奖荣誉</span>
@@ -989,6 +1052,30 @@
                         <span class="del"><input name="" value="删除" type="button"></span>
                     </div>
                 </div>
+            </div>
+            <div v-if="dialogOpen" class="resumeMangeInput">
+                <el-form :model="ruleForm9" ref="ruleForm9" label-width="100px" class="demo-ruleForm">
+                    <el-form-item label="学历" required>
+                        <el-col :span="8">
+                            <el-select v-model="ruleForm9.theme" placeholder="请选择主题">
+                                <el-option label="兴趣爱好" value="0"></el-option>
+                                <el-option label="宗教信仰" value="1"></el-option>
+                                <el-option label="职业目标" value="2"></el-option>
+                                <el-option label="获奖荣誉" value="3"></el-option>
+                                <el-option label="个性特长" value="4"></el-option>
+                            </el-select>
+                        </el-col>
+                    </el-form-item>
+                    <el-form-item label="描述" required>
+                        <el-col :span="14">
+                            <el-input v-model="ruleForm9.desc" placeholder="请输入描述" type="textarea" :rows="3"></el-input>
+                        </el-col>
+                    </el-form-item>
+                    <el-form-item>
+                        <el-button type="primary" @click="submitForm('ruleForm5')">保存</el-button>
+                        <el-button @click="resetForm('ruleForm5')">重置</el-button>
+                    </el-form-item>
+                </el-form>
             </div>
         </div>
         <!--<div class="resumeMange">
@@ -1065,8 +1152,8 @@
     </div>
 </footer>
 <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://unpkg.com/vue/dist/vue.js"></script>
-<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script src="//unpkg.com/vue/dist/vue.js"></script>
+<script src="//unpkg.com/element-ui@2.14.1/lib/index.js"></script>
 <script src="./js/creatResume.js"></script>
 
 </body>

@@ -19,8 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2a6b272-6f19-46f8-8a82-6ebac8c6e6a9" name="Default Changelist" comment="">
+    <list default="true" id="a2a6b272-6f19-46f8-8a82-6ebac8c6e6a9" name="Default Changelist" comment="1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creatResume.html" beforeDir="false" afterPath="$PROJECT_DIR$/creatResume.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/creatResume.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/creatResume.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/creatResume.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/creatResume.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/creatResume.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/creatResume.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/creatResume.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/creatResume.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,8 +91,17 @@
       <workItem from="1605492692843" duration="9547000" />
       <workItem from="1605609731982" duration="32000" />
       <workItem from="1605610833988" duration="2457000" />
-      <workItem from="1606119932241" duration="44000" />
+      <workItem from="1606119932241" duration="454000" />
+      <workItem from="1606181161933" duration="13300000" />
     </task>
+    <task id="LOCAL-00001" summary="1">
+      <created>1606119986849</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606119986849</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +118,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1063" y="550" key="#Configure_Path_Variables" timestamp="1605610843447">
@@ -139,10 +157,14 @@
     </state>
     <state x="638" y="200" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606119975626" />
     <state x="1041" y="228" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1605610975835" />
-    <state x="812" y="455" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606119954968">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606120190623">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="812" y="455" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606119954968" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606120190623" />
+    <state x="812" y="455" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606181166772">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="812" y="455" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606181166772" />
     <state x="1083" y="613" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1605610854083" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1604631506428">
       <screen x="0" y="0" width="1920" height="1040" />

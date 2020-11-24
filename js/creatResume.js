@@ -1,6 +1,7 @@
 var vm = new Vue({
     el:'#creatResume',
     data:{
+        dialogOpen:false,
         ruleForm: {
             name: '',
             sex:0,
@@ -32,13 +33,13 @@ var vm = new Vue({
           eval:'',
         },
         ruleForm3:{
-            name:'',
-            nature:'',
-            person:'',
-            industry:'',
-            date:'',
-            occName:'',
-            contact:''
+            name:'萨达',
+            nature:0,
+            person:1,
+            industry:2,
+            date:[2018,2020],
+            occName:'1231231',
+            contact:'1、阿斯顿你就爱上你尽快,2、撒大家把大门扣篮啊ui前往悼念把那失败的借口案板上的那是vhd,2、撒大家把大门扣篮啊ui前往悼念把那失败的借口案板上的那是1、阿斯顿你就爱上你尽快,2、撒大家把大门扣篮啊ui前往悼念把那失败的借口案板上的那是vhd,2、撒大家把大门扣篮啊ui前往悼念把那失败的借口案板上的那是'
         },
         ruleForm4:{
             resource: 0,
@@ -58,15 +59,116 @@ var vm = new Vue({
         ruleForm6:[
             {
                 name:'',
-                status:'',
-                rank:'',
+                skill:'',
             },
+        ],
+        ruleForm7:[
             {
                 name:'',
-                status:'',
-                rank:'',
+                skill:'',
+            },
+        ],
+        ruleForm8:[
+            {
+                name:'',
+                date:'',
+            },
+        ],
+        ruleForm9:{
+            theme:'',
+            desc:'',
+        },
+        skill:[
+            {
+                value:'0',
+                label:'入门'
+            },
+            {
+                value:'1',
+                label:'熟练'
+            },
+            {
+                value:'2',
+                label:'精通'
+            },
+            {
+                value:'3',
+                label:'其他'
             }
         ],
+        language:[
+            {
+                value:'0',
+                label:'普通话',
+                skilled:'0',
+            },
+            {
+                value:'1',
+                label:'粤语',
+                skilled:'0',
+            },
+            {
+                value:'2',
+                label:'英语',
+                skilled:'0',
+            },
+            {
+                value:'3',
+                label:'日语',
+                skilled:'0',
+            },
+            {
+                value:'4',
+                label:'法语',
+                skilled:'0',
+            },
+            {
+                value:'5',
+                label:'德语',
+                skilled:'0',
+            },
+            {
+                value:'6',
+                label:'阿拉伯语',
+                skilled:'0',
+            },
+            {
+                value:'7',
+                label:'德语',
+                skilled:'0',
+            },
+            {
+                value:'8',
+                label:'西班牙语',
+                skilled:'0',
+            },
+            {
+                value:'9',
+                label:'朝鲜语',
+                skilled:'0',
+            },
+            {
+                value:'10',
+                label:'意大利语',
+                skilled:'0',
+            },
+            {
+                value:'11',
+                label:'韩语',
+                skilled:'0',
+            },
+            {
+                value:'12',
+                label:'葡萄牙语',
+                skilled:'0',
+            },
+            {
+                value:'13',
+                label:'其他语种',
+                skilled:'0',
+            },
+        ],
+
         rules: {
             name: [
                 { required: true, message: '请输入姓名', trigger: 'blur' },
@@ -247,6 +349,9 @@ var vm = new Vue({
     methods: {
         submitForm(formName) {
             this.$refs[formName].validate((valid) => {
+                if(formName == 'ruleForm1'){
+                    this.dialogOpen = false
+                }
                 if (valid) {
                     alert('submit!');
                 } else {
@@ -258,81 +363,36 @@ var vm = new Vue({
         resetForm(formName) {
             this.$refs[formName].resetFields();
         },
-
-        submitForm1(formName) {
-            this.$refs[formName].validate((valid) => {
-                if (valid) {
-                    alert('submit!');
-                } else {
-                    console.log('error submit!!');
-                    return false;
-                }
-            });
-        },
-        resetForm1(formName) {
-            this.$refs[formName].resetFields();
-        },
-
-        submitForm2(formName) {
-            this.$refs[formName].validate((valid) => {
-                if (valid) {
-                    alert('submit!');
-                } else {
-                    console.log('error submit!!');
-                    return false;
-                }
-            });
-        },
-        resetForm2(formName) {
-            this.$refs[formName].resetFields();
-        },
-        submitForm3(formName) {
-            this.$refs[formName].validate((valid) => {
-                if (valid) {
-                    alert('submit!');
-                } else {
-                    console.log('error submit!!');
-                    return false;
-                }
-            });
-        },
-        resetForm3(formName) {
-            this.$refs[formName].resetFields();
-        },
-
-        submitForm4(formName) {
-            this.$refs[formName].validate((valid) => {
-                if (valid) {
-                    alert('submit!');
-                } else {
-                    console.log('error submit!!');
-                    return false;
-                }
-            });
-        },
-        resetForm4(formName) {
-            this.$refs[formName].resetFields();
-        },
-
-        submitForm5(formName) {
-            this.$refs[formName].validate((valid) => {
-                if (valid) {
-                    alert('submit!');
-                } else {
-                    console.log('error submit!!');
-                    return false;
-                }
-            });
-        },
-        resetForm5(formName) {
-            this.$refs[formName].resetFields();
-        },
-
         changeV(){
             console.log(this.ruleForm3.date)
         },
         handleChange(value) {
             console.log(value);
+        },
+        newList(val){
+            if(val == 0){
+                this.ruleForm6.push({name:'',skill: ''})
+            }else if(val == 1){
+                this.ruleForm7.push({name:'',skill: ''})
+            }else if(val == 2){
+                this.ruleForm8.push({name:'',date: ''})
+            }
+        },
+        delList(val,index){
+            if(val == 0){
+                this.ruleForm6.splice(index,1)
+            }else if(val == 1){
+                this.ruleForm7.splice(index,1)
+            }else if(val == 2){
+                this.ruleForm8.splice(index,1)
+            }
+        },
+        openDialog(v,l){
+            if(v == 0){
+
+            }else{
+                this.dialogOpen = true
+            }
         }
     }
 })

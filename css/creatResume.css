@@ -360,6 +360,48 @@
   background: #FAFAFA;
   margin-top: 10px;
 }
+.creatResume .right .resumeMange .objectiveInput .ruleFormClass,
+.creatResume .right .resumeMange .resumeMangeInput .ruleFormClass {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.creatResume .right .resumeMange .objectiveInput .del,
+.creatResume .right .resumeMange .resumeMangeInput .del {
+  cursor: pointer;
+  color: #409EFF;
+  font-size: 20px;
+  line-height: 40px;
+}
+.creatResume .right .resumeMange .objectiveInput .addAbility,
+.creatResume .right .resumeMange .resumeMangeInput .addAbility {
+  width: 100%;
+  font-size: 13px;
+  float: left;
+  color: #999;
+  height: 20px;
+  line-height: 20px;
+  margin: 20px 0;
+}
+.creatResume .right .resumeMange .objectiveInput .newList,
+.creatResume .right .resumeMange .resumeMangeInput .newList {
+  cursor: pointer;
+  width: 100%;
+  font-size: 13px;
+  float: left;
+  height: 20px;
+  line-height: 20px;
+  margin: 20px 0;
+  margin-left: 6%;
+  color: #409EFF;
+}
+.creatResume .right .resumeMange .objectiveInput .newList i,
+.creatResume .right .resumeMange .resumeMangeInput .newList i {
+  padding-right: 5px;
+  color: #409EFF;
+}
 .creatResume .right .resumeMange .objectiveInput .el-range-separator,
 .creatResume .right .resumeMange .resumeMangeInput .el-range-separator {
   width: 15%;

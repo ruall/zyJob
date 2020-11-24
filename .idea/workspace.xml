@@ -19,9 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2a6b272-6f19-46f8-8a82-6ebac8c6e6a9" name="Default Changelist" comment="中文简历页面">
+    <list default="true" id="a2a6b272-6f19-46f8-8a82-6ebac8c6e6a9" name="Default Changelist" comment="1" />
+    <list id="b7032214-ad7b-4a74-be50-c6a18994afea" name="ingnore" comment="ingnore">
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_11_23_22_01_[Default_Changelist]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_11_23_22_01__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_11_24_19_54_[Default_Changelist]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_11_24_19_54__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/creatResume.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/creatResume.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +60,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
     <property name="list.type.of.created.stylesheet" value="Less" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -72,6 +76,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="a2a6b272-6f19-46f8-8a82-6ebac8c6e6a9" name="Default Changelist" comment="" />
+      <changelist id="b7032214-ad7b-4a74-be50-c6a18994afea" name="ingnore" comment="" />
       <created>1604466012121</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -92,6 +97,7 @@
       <workItem from="1605610833988" duration="2457000" />
       <workItem from="1606119932241" duration="454000" />
       <workItem from="1606181161933" duration="15941000" />
+      <workItem from="1606229128926" duration="960000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1606119986849</created>
@@ -114,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606210024084</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ingnore">
+      <created>1606229739611</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606229739612</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,17 +148,19 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1" />
     <MESSAGE value="中文简历页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="中文简历页面" />
+    <MESSAGE value="ingnore" />
+    <option name="LAST_COMMIT_MESSAGE" value="ingnore" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1063" y="550" key="#Configure_Path_Variables" timestamp="1605610843447">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1063" y="550" key="#Configure_Path_Variables/0.0.2560.1400@0.0.2560.1400" timestamp="1605610843447" />
-    <state x="844" y="353" key="#File_Watchers" timestamp="1604473870067">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="1125" y="475" key="#File_Watchers" timestamp="1606218853882">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="844" y="353" key="#File_Watchers/0.0.1920.1040@0.0.1920.1040" timestamp="1604473870067" />
+    <state x="1125" y="475" key="#File_Watchers/0.0.2560.1400@0.0.2560.1400" timestamp="1606218853882" />
     <state x="1029" y="229" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1604474255370">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -166,15 +181,24 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1029" y="279" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604474260711" />
-    <state x="638" y="200" key="SettingsEditor" timestamp="1606119975626">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="1041" y="228" key="SettingsEditor" timestamp="1606230095848">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="638" y="200" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606119975626" />
-    <state x="1041" y="228" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1605610975835" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606210025721">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="1041" y="228" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1606230095848" />
+    <state x="1126" y="611" key="VCS.ChangelistChooser" timestamp="1606229799232">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1126" y="611" key="VCS.ChangelistChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1606229799232" />
+    <state x="1160" y="612" key="VCS.EditChangelistDialog" timestamp="1606229646138">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1160" y="612" key="VCS.EditChangelistDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1606229646138" />
+    <state x="736" y="341" key="Vcs.Push.Dialog.v2" timestamp="1606229741927">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606210025721" />
+    <state x="736" y="341" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1606229741927" />
     <state x="812" y="455" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606181166772">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -121,6 +121,7 @@
   line-height: 28px;
 }
 .creatResume .right .personInfo .bRight .basicName .resumeTit .resumeEdit a {
+  cursor: pointer;
   float: left;
   color: #98C3E6;
   font-size: 13px;
@@ -495,6 +496,8 @@
   height: 24px;
   line-height: 24px;
 }
+.creatResume .right .resumeMange .workerCon .listCon .listCenter .info .speciality,
+.creatResume .right .resumeMange .educationCon .listCon .listCenter .info .speciality,
 .creatResume .right .resumeMange .workerCon .listCon .listCenter .info .con,
 .creatResume .right .resumeMange .educationCon .listCon .listCenter .info .con {
   width: 100%;

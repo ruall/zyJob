@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>隐私设置</title>
+    <link rel="stylesheet" href="//unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2180701_641vovyc8f.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/creatResume.css">
+    <link rel="stylesheet" href="./css/privacy.css">
+</head>
+<body>
+
+<header>
+    <div class="header">
+        <div class="left"><span>人才招聘</span></div>
+        <div class="right">
+            <ul>
+                <li>首页</li>
+                <li>找工作</li>
+                <li class="cur">找人才</li>
+                <li>社区</li>
+                <li>会员登录</li>
+                <li class="search">
+                    <span><input type="text" placeholder="普工、销售、客服"></span>
+                    <i class="iconfont icon-search1"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div class="nav-img"><img src="./images/img4.png" alt=""></div>
+
+<div class="creatResume" id="privacy">
+    <div class="left">
+        <ul>
+            <li>账号中心</li>
+            <li>中文简历</li>
+            <li>简历管理</li>
+            <li class="cur">隐私设置</li>
+            <li>账号设置</li>
+        </ul>
+        <ul>
+            <li>面试通知</li>
+            <li>谁浏览了我</li>
+            <li>简历投递记录</li>
+            <li>职位收藏夹</li>
+            <li>浏览记录</li>
+        </ul>
+    </div>
+
+    <div class="right">
+        <div class="jright">
+            <div class="content">
+                <div class="jobtitle">
+                    <div class="tithead">
+                        <h2>隐私设置</h2>
+                    </div>
+                </div>
+                <div class="setresume">
+                    <form name="thisForm" id="thisForm" method="post" action="http://www.job0722.com/personal/privacy">
+                        <input name="resume_id" type="hidden" value="60067">
+                        <input name="type" type="hidden" value="up">
+                        <input type="hidden" name="_token" value="p1YVNjy2i0Xw2Vs4zfztK0UXOo91F19i0NItTj0T">
+                        <!--保密设置-->
+                        <div class="stitle">保密设置</div>
+                        <el-row>
+                            <el-col :span="24">
+                                <el-radio v-model="radio" label="1">完全公开</el-radio>
+                            </el-col>
+                            <el-col :span="24">
+                                <el-radio v-model="radio" label="2">不公开（任何人都搜索不到您的简历，只有主动投递给企业才能查看）</el-radio>
+                            </el-col>
+                            <el-col :span="24">
+                                <el-radio v-model="radio" label="3">完全保密（直接关闭简历，不能通过任何方式查看您的简历）</el-radio>
+                            </el-col>
+                        </el-row>
+                        <div class="save">
+                            <input id="savebutton" type="submit" class="savebutton" value="保存">
+                        </div>
+                    </form>
+                    <!--屏蔽企业-->
+                    <div class="stitle shield">屏蔽企业</div>
+                    <div class="filtration">您一定不希望您的简历被现在的公司看到，把它写进来过滤掉吧！最多可以过滤10家！</div>
+                    <div class="search">
+                        <form name="shieldFrom" id="shieldFrom" method="post"
+                              action="http://www.job0722.com/personal/privacy" onsubmit="return checkkeword()">
+                            <input name="id" type="hidden" value="60067">
+                            <input name="type" type="hidden" value="sql">
+                            <input type="hidden" name="_token" value="p1YVNjy2i0Xw2Vs4zfztK0UXOo91F19i0NItTj0T">
+
+                            <div class="sleft">
+                                <input name="keyword" type="text" value="" placeholder="请输入要屏蔽的企业名称" id="keyword">
+                            </div>
+                            <div class="sright">
+                                <input name="sub" class="subsearch" value="搜索" type="submit">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="issecrecy">
+                        <div class="ilist" id="ilist">
+                            <div class="stle">暂无屏蔽企业</div>
+                            <ul class="one">
+                                <li><span><a>随州职业技术学院计算机应用技术（软件工程）专业</a></span><i id="119"></i><em></em></li>
+                                <li><span><a>襄阳国脉软件技术有限公司</a></span><i id="85053"></i><em></em></li>
+                            </ul>
+                            <div class="stopper"></div>
+                        </div>
+                    </div>
+
+                    <!--请稍候...-->
+                    <div class="comlist" id="comlist">
+                        <ul class="two">
+                            <li><span><a>随州友蝶软件有限公司</a></span><i></i><em></em></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="top">
+        <ul>
+            <li>
+                <i class="iconfont icon-mianfei"></i>
+                <span>免费求职</span>
+                <span>企业直招 不收取任何费用</span>
+            </li>
+            <li>
+                <i class="iconfont icon-jingzhun"></i>
+                <span>专业招聘</span>
+                <span>专人服务 入职速度更快</span>
+            </li>
+            <li>
+                <i class="iconfont icon-you"></i>
+                <span>优质服务</span>
+                <span>企业社区问答 免费信贷</span>
+            </li>
+            <li>
+                <i class="iconfont icon-ren-huawuyuan"></i>
+                <span>服务热线 : 000-000-0000</span>
+                <span>求职QQ群：258506508</span>
+            </li>
+        </ul>
+    </div>
+    <div class="foot">
+        <div class="bottom">
+            <div class="left">
+                <i class="iconfont icon-fuwurexian"></i>
+                <span>服务热线</span>
+                <span>000-000-00000</span>
+                <span>工作日：9：00-19：00</span>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>
+                        <dl>
+                            <dt><a href="#">网站首页</a></dt>
+                            <dd><a href="#">销售/文员</a></dd>
+                            <dd><a href="#">普工/技工</a></dd>
+                            <dd><a href="#">普工/技工</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><a href="#">找工作</a></dt>
+                            <dd><a href="#">求职流程</a></dd>
+                            <dd><a href="#">企业推荐</a></dd>
+                            <dd><a href="#">前沿岗位</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><a href="#">社区</a></dt>
+                            <dd><a href="#">热门文章</a></dd>
+                            <dd><a href="#">前沿资讯</a></dd>
+                            <dd><a href="#">求职帮助</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="//unpkg.com/vue/dist/vue.js"></script>
+<script src="//unpkg.com/element-ui@2.14.1/lib/index.js"></script>
+<script src="./js/privacy.js"></script>
+</body>
+</html>

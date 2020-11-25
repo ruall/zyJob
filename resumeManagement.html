@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简历管理</title>
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_2180701_641vovyc8f.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/creatResume.css">
+    <link rel="stylesheet" href="./css/resumeManagement.css">
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="left"><span>人才招聘</span></div>
+        <div class="right">
+            <ul>
+                <li>首页</li>
+                <li>找工作</li>
+                <li class="cur">找人才</li>
+                <li>社区</li>
+                <li>会员登录</li>
+                <li class="search">
+                    <span><input type="text" placeholder="普工、销售、客服"></span>
+                    <i class="iconfont icon-search1"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div class="nav-img"><img src="./images/img4.png" alt=""></div>
+
+<div class="creatResume" id="creatResume">
+    <div class="left">
+        <ul>
+            <li>账号中心</li>
+            <li>中文简历</li>
+            <li class="cur">简历管理</li>
+            <li>隐私设置</li>
+            <li>账号设置</li>
+        </ul>
+        <ul>
+            <li>面试通知</li>
+            <li>谁浏览了我</li>
+            <li>简历投递记录</li>
+            <li>职位收藏夹</li>
+            <li>浏览记录</li>
+        </ul>
+    </div>
+
+    <div class="right">
+        <div class="jright">
+            <div class="content">
+                <div class="jobtitle">
+                    <div class="tithead">
+                        <h2>简历管理</h2>
+                    </div>
+
+                    <div class="default">
+                        <div class="one">
+                            <span>默认简历</span>
+                        </div>
+                        <div class="two">
+                            <span class="title">
+                                <a href="http://www.job0722.com/personal/resume_mange?resume_id=60067">我的简历</a>
+                            </span>
+                            <p class="perfect">
+                                <span>完善度：</span>
+                                <span class="shell"><i style="width:100%"></i></span>
+                                <span class="completion">100%</span>
+                            </p>
+                        </div>
+                        <div class="three">
+                            <span><strong>0</strong>投递职位</span>
+                            <span><strong>7</strong>被浏览</span>
+                            <span><strong>0</strong>面试通知</span>
+                        </div>
+                        <div class="four">
+                            <p>修改时间：</p>
+                            <p>2020-11-12</p>
+                        </div>
+                        <div class="five">
+                            <ul>
+                                <li><a href="http://www.job0722.com/personal/resume_mange?resume_id=60067" target="_blank">修改</a></li>
+                                <li><a href="http://www.job0722.com/resume_25f4af60067.html" target="_blank">预览</a></li>
+                                <li><a href="http://www.job0722.com/personal/warmtips?resume_id=60067">刷新</a></li>
+                                <li><a href="http://www.job0722.com/personal/privacy?resume_id=60067">隐私</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="create"><p>您还可以创建<strong>4</strong>份简历!<a onclick="createResume('4')">创建中文版</a></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <div class="top">
+        <ul>
+            <li>
+                <i class="iconfont icon-mianfei"></i>
+                <span>免费求职</span>
+                <span>企业直招 不收取任何费用</span>
+            </li>
+            <li>
+                <i class="iconfont icon-jingzhun"></i>
+                <span>专业招聘</span>
+                <span>专人服务 入职速度更快</span>
+            </li>
+            <li>
+                <i class="iconfont icon-you"></i>
+                <span>优质服务</span>
+                <span>企业社区问答 免费信贷</span>
+            </li>
+            <li>
+                <i class="iconfont icon-ren-huawuyuan"></i>
+                <span>服务热线 : 000-000-0000</span>
+                <span>求职QQ群：258506508</span>
+            </li>
+        </ul>
+    </div>
+    <div class="foot">
+        <div class="bottom">
+            <div class="left">
+                <i class="iconfont icon-fuwurexian"></i>
+                <span>服务热线</span>
+                <span>000-000-00000</span>
+                <span>工作日：9：00-19：00</span>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>
+                        <dl>
+                            <dt><a href="#">网站首页</a></dt>
+                            <dd><a href="#">销售/文员</a></dd>
+                            <dd><a href="#">普工/技工</a></dd>
+                            <dd><a href="#">普工/技工</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><a href="#">找工作</a></dt>
+                            <dd><a href="#">求职流程</a></dd>
+                            <dd><a href="#">企业推荐</a></dd>
+                            <dd><a href="#">前沿岗位</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><a href="#">社区</a></dt>
+                            <dd><a href="#">热门文章</a></dd>
+                            <dd><a href="#">前沿资讯</a></dd>
+                            <dd><a href="#">求职帮助</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>

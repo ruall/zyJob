@@ -278,36 +278,36 @@
         <div class="resumeMange">
             <div class="resumeTit">
                 <h2>求职意向</h2>
-                <span class="resumeEdit" @click="openDialog(0)"><a><i></i>编辑</a></span>
+                <span class="resumeEdit" @click="edit('ruleForm1',0,0)"><a><i></i>编辑</a></span>
             </div>
             <div v-if="!dialogOpen[0].checked" class="objectiveCon">
                 <dl>
                     <dt>意向岗位:</dt>
-                    <dd><span class="intentionjobs">啊啊啊</span></dd>
+                    <dd><span class="intentionjobs">{{ruleForm1.list[0].name}}</span></dd>
                 </dl>
                 <dl>
                     <dt>职位类别:</dt>
-                    <dd><span class="jobsort">销售代表</span></dd>
+                    <dd><span class="jobsort">{{ruleForm1.list[0].job}}</span></dd>
                 </dl>
                 <dl>
                     <dt>期望月薪:</dt>
-                    <dd><span class="expectedsalary">3000元/月</span></dd>
+                    <dd><span class="expectedsalary">{{ruleForm1.list[0].price}}元/月</span></dd>
                 </dl>
                 <dl>
                     <dt>工作地点:</dt>
-                    <dd><span class="jobarea">随州市</span></dd>
+                    <dd><span class="jobarea">{{ruleForm1.list[0].workAddress}}</span></dd>
                 </dl>
             </div>
             <div v-if="dialogOpen[0].checked" class="objectiveInput">
                 <el-form :model="ruleForm1" :rules="rules1" ref="ruleForm1" label-width="100px" class="demo-ruleForm">
-                    <el-form-item label="意向岗位" prop="name">
+                    <el-form-item label="意向岗位" required>
                         <el-col :span="8">
                             <el-input v-model="ruleForm1.name" placeholder="请输入意向岗位"></el-input>
                         </el-col>
                     </el-form-item>
                     <el-form-item label="工作地区" required>
                         <el-col :span="8">
-                            <el-cascader v-model="ruleForm1.workAddress" :props="{ multiple: true ,emitPath: false}"
+                            <el-cascader v-model="ruleForm1.workAddress" :props="{ multiple: true ,emitPath: false,checkStrictly: true}"
                                          :options="area" @change="handleChange" collapse-tags :show-all-levels="false"
                                          clearable></el-cascader>
                         </el-col>
@@ -318,8 +318,10 @@
                                     placeholder="请选择工作岗位"
                                     :options="options"
                                     v-model="ruleForm1.job"
-                                    :props="{ multiple: true }"
+                                    :props="{ multiple: true,checkStrictly: true ,emitPath: false}"
                                     collapse-tags
+                                    @change="handleChange"
+                                    clearable
                                     :show-all-levels="false">
                             </el-cascader>
                         </el-col>
@@ -364,14 +366,14 @@
         <div class="resumeMange">
             <div class="resumeTit">
                 <h2>自我评价</h2>
-                <span class="resumeEdit" @click="openDialog(1)"><a><i></i>编辑</a></span>
+                <span class="resumeEdit" @click="edit('ruleForm2',0,1)"><a><i></i>编辑</a></span>
             </div>
             <div v-if="!dialogOpen[1].checked" class="resumeMangeCon selfEvaluationCon">
                 <div class="listCon">
                     <div class="listLeft"><span class="listTime">自我评价</span></div>
                     <div class="listCenter">
                         <div class="info" style="padding-top: 0px;">
-                            <div class="con" style="margin-top: 0px;">洒家扩大你卡上</div>
+                            <div class="con" style="margin-top: 0px;font-size: 14px">{{ruleForm2.list[0].eval}}</div>
                         </div>
                     </div>
                 </div>
@@ -379,10 +381,10 @@
             <div v-if="dialogOpen[1].checked" class="resumeMangeInput">
                 <el-form :model="ruleForm2" ref="ruleForm2" label-width="100px" class="demo-ruleForm">
                     <el-form-item label="自我评价" prop="name">
-                        <el-col :span="8">
+                        <el-col :span="16">
                             <el-input
                                     type="textarea"
-                                    :rows="2"
+                                    :rows="3"
                                     placeholder="请输入自我评价"
                                     v-model="ruleForm2.eval">
                             </el-input>
@@ -514,12 +516,12 @@
                 </el-form>
             </div>
             <div class="workerCon">
-                <div class="listCon">
-                    <div class="listLeft"><span class="listTime"><span class="starttime">2001-01</span>~<span
-                            class="endtime">2006-05</span></span></div>
+                <div class="listCon" v-for="(item,index) in ruleForm3.list">
+                    <div class="listLeft"><span class="listTime"><span class="starttime">{{item.date[0]}}</span>~<span
+                            class="endtime">{{item.date[1]}}</span></span></div>
                     <div class="listCenter">
                         <div class="tit">
-                            <strong class="post">萨达</strong><b>|</b><span class="company">卓远教育1</span>
+                            <strong class="post">{{item.name}}</strong><b>|</b><span class="company">{{item.occName}}</span>
                         </div>
                         <div class="info">
                             <ul>
@@ -529,47 +531,14 @@
                                 <b>-</b>
                                 <li class="industry">计算机业（软件、数据库、系统集成）</li>
                             </ul>
-                            <div class="con">1、阿斯顿你就爱上你尽快<br>
-                                2、撒大家把大门扣篮啊ui前往悼念把那失败的借口案板上的那是vhd<br>
-                                3、单丝的母亲我呢顶撒算多诺拉数据库的年轻有为的NSA看见了电脑看不懂啊看到空间<br>
-                                4、地球我撒娇看到你骄傲吧的就把手机打不死的考虑到马克思列宁大俗很多白哈巴开了博客
-                            </div>
+                            <div class="con">{{item.contact}}</div>
                         </div>
                     </div>
                     <div class="listRight">
                         <span class="edit">
-                            <input value="编辑" type="button">
+                            <input value="编辑" type="button" @click="edit('ruleForm3',index,2)">
                         </span>
-                        <span class="del"><input value="删除" type="button"></span>
-                    </div>
-                </div>
-                <div class="listCon">
-                    <div class="listLeft"><span class="listTime"><span class="starttime">2001-01</span>~<span
-                            class="endtime">2006-05</span></span></div>
-                    <div class="listCenter">
-                        <div class="tit">
-                            <strong class="post">萨达</strong><b>|</b><span class="company">卓远教育1</span>
-                        </div>
-                        <div class="info">
-                            <ul>
-                                <li class="comkind">民营企业</li>
-                                <b>-</b>
-                                <li class="scale">50-200人</li>
-                                <b>-</b>
-                                <li class="industry">计算机业（软件、数据库、系统集成）</li>
-                            </ul>
-                            <div class="con">1、阿斯顿你就爱上你尽快<br>
-                                2、撒大家把大门扣篮啊ui前往悼念把那失败的借口案板上的那是vhd<br>
-                                3、单丝的母亲我呢顶撒算多诺拉数据库的年轻有为的NSA看见了电脑看不懂啊看到空间<br>
-                                4、地球我撒娇看到你骄傲吧的就把手机打不死的考虑到马克思列宁大俗很多白哈巴开了博客
-                            </div>
-                        </div>
-                    </div>
-                    <div class="listRight">
-                        <span class="edit">
-                            <input value="编辑" type="button">
-                        </span>
-                        <span class="del"><input value="删除" type="button"></span>
+                        <span class="del"><input value="删除" type="button" @click="del('ruleForm3',index)"></span>
                     </div>
                 </div>
             </div>
@@ -578,50 +547,6 @@
             <div class="resumeTit">
                 <h2>教育培训经历</h2>
                 <span class="resumeEdit" @click="openDialog(3)"><a><i></i>添加</a></span>
-            </div>
-            <div v-if="!dialogOpen[3].checked" class="educationCon">
-                <div class="listCon">
-                    <div class="listLeft">
-                        <span class="listTime">
-                            <span class="starttime">2006-01</span>~<span class="endtime">2016-05</span>
-                        </span>
-                    </div>
-                    <div class="listCenter">
-                        <div class="tit">
-                            <strong class="education">阿萨大大</strong>
-                            <b>|</b>
-                            <span class="school">大少爷的那几</span>
-                        </div>
-                        <div class="info">
-                            <div class="con">的长头发v搞环保健康美丽，；。 长头发v关于不会叫你喀麦隆的啊VS的必杀技可达四点v噶会比较快的v噶速度很快白金卡v有噶和补给你看吗</div>
-                        </div>
-                    </div>
-                    <div class="listRight">
-                        <span class="edit"><input onclick="editEdu($(this),'61123')" value="编辑" type="button"></span>
-                        <span class="del"><input onclick="delEdu('61123')" value="删除" type="button"></span>
-                    </div>
-                </div>
-                <div class="listCon">
-                    <div class="listLeft">
-                        <span class="listTime">
-                            <span class="starttime">2006-01</span>~<span class="endtime">2016-05</span>
-                        </span>
-                    </div>
-                    <div class="listCenter">
-                        <div class="tit">
-                            <strong class="education">阿萨大大</strong>
-                            <b>|</b>
-                            <span class="school">大少爷的那几</span>
-                        </div>
-                        <div class="info">
-                            <div class="con">的长头发v搞环保健康美丽，；。 长头发v关于不会叫你喀麦隆的啊VS的必杀技可达四点v噶会比较快的v噶速度很快白金卡v有噶和补给你看吗</div>
-                        </div>
-                    </div>
-                    <div class="listRight">
-                        <span class="edit"><input onclick="editEdu($(this),'61123')" value="编辑" type="button"></span>
-                        <span class="del"><input onclick="delEdu('61123')" value="删除" type="button"></span>
-                    </div>
-                </div>
             </div>
             <div v-if="dialogOpen[3].checked" class="resumeMangeInput">
                 <el-form :model="ruleForm4" ref="ruleForm4" label-width="100px" class="demo-ruleForm">
@@ -650,7 +575,7 @@
                             </el-date-picker>
                         </el-col>
                     </el-form-item>
-                    <el-form-item label="学历" required>
+                    <el-form-item label="学历" required v-if="ruleForm4.resource === 0">
                         <el-col :span="8">
                             <el-select v-model="ruleForm4.educ" placeholder="请选择学历">
                                 <el-option label="初中" value="0"></el-option>
@@ -682,55 +607,36 @@
                     </el-form-item>
                 </el-form>
             </div>
+            <div v-if="!dialogOpen[3].checked" class="educationCon">
+                <div class="listCon" v-for="(item,index) in ruleForm4.list">
+                    <div class="listLeft">
+                        <span class="listTime">
+                            <span class="starttime">{{item.date[0]}}</span>~<span class="endtime">{{item.date[1]}}</span>
+                        </span>
+                    </div>
+                    <div class="listCenter">
+                        <div class="tit">
+                            <strong class="education" v-if="item.resource == 0">{{item.educ}}</strong>
+                            <strong class="education" v-if="item.resource == 1">{{item.disc}}</strong>
+                            <b>|</b>
+                            <span class="school">{{item.name}}</span>
+                        </div>
+                        <div class="info">
+                            <span class="speciality" v-if="item.resource == 0">{{item.disc}}</span>
+                            <div class="con">{{item.desc}}</div>
+                        </div>
+                    </div>
+                    <div class="listRight">
+                        <span class="edit"><input @click="edit('ruleForm4',index,3)" value="编辑" type="button"></span>
+                        <span class="del"><input @click="del('ruleForm4',index)" value="删除" type="button"></span>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="resumeMange">
             <div class="resumeTit">
                 <h2>项目经验</h2>
                 <span class="resumeEdit" @click="openDialog(4)"><a><i></i>添加</a></span>
-            </div>
-            <div v-if="!dialogOpen[4].checked" class="educationCon">
-                <div class="listCon">
-                    <div class="listLeft">
-                        <span class="listTime">
-                            <span class="starttime">2006-01</span>~<span class="endtime">2016-05</span>
-                        </span>
-                    </div>
-                    <div class="listCenter">
-                        <div class="tit">
-                            <strong class="education">阿萨大大</strong>
-                            <b>|</b>
-                            <span class="school">大少爷的那几</span>
-                        </div>
-                        <div class="info">
-                            <div class="con">的长头发v搞环保健康美丽，；。 长头发v关于不会叫你喀麦隆的啊VS的必杀技可达四点v噶会比较快的v噶速度很快白金卡v有噶和补给你看吗</div>
-                        </div>
-                    </div>
-                    <div class="listRight">
-                        <span class="edit"><input onclick="editEdu($(this),'61123')" value="编辑" type="button"></span>
-                        <span class="del"><input onclick="delEdu('61123')" value="删除" type="button"></span>
-                    </div>
-                </div>
-                <div class="listCon">
-                    <div class="listLeft">
-                        <span class="listTime">
-                            <span class="starttime">2006-01</span>~<span class="endtime">2016-05</span>
-                        </span>
-                    </div>
-                    <div class="listCenter">
-                        <div class="tit">
-                            <strong class="education">阿萨大大</strong>
-                            <b>|</b>
-                            <span class="school">大少爷的那几</span>
-                        </div>
-                        <div class="info">
-                            <div class="con">的长头发v搞环保健康美丽，；。 长头发v关于不会叫你喀麦隆的啊VS的必杀技可达四点v噶会比较快的v噶速度很快白金卡v有噶和补给你看吗</div>
-                        </div>
-                    </div>
-                    <div class="listRight">
-                        <span class="edit"><input onclick="editEdu($(this),'61123')" value="编辑" type="button"></span>
-                        <span class="del"><input onclick="delEdu('61123')" value="删除" type="button"></span>
-                    </div>
-                </div>
             </div>
             <div v-if="dialogOpen[4].checked" class="resumeMangeInput">
                 <el-form :model="ruleForm5" ref="ruleForm5" label-width="100px" class="demo-ruleForm">
@@ -766,6 +672,29 @@
                         <el-button @click="resetForm('ruleForm5',4)">重置</el-button>
                     </el-form-item>
                 </el-form>
+            </div>
+            <div v-if="!dialogOpen[4].checked" class="educationCon">
+                <div class="listCon" v-for="(item,index) in ruleForm5.list">
+                    <div class="listLeft">
+                        <span class="listTime">
+                            <span class="starttime">{{item.date[0]}}</span>~<span class="endtime">{{item.date[1]}}</span>
+                        </span>
+                    </div>
+                    <div class="listCenter">
+                        <div class="tit">
+                            <strong class="education">{{item.name}}</strong>
+                            <b>|</b>
+                            <span class="school">{{item.disc}}</span>
+                        </div>
+                        <div class="info">
+                            <div class="con">{{item.desc}}</div>
+                        </div>
+                    </div>
+                    <div class="listRight">
+                        <span class="edit"><input @click="edit('ruleForm5',index,4)" value="编辑" type="button"></span>
+                        <span class="del"><input @click="del('ruleForm5',index)" value="删除" type="button"></span>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="resumeMange">
@@ -1036,26 +965,9 @@
                 <h2>其他信息</h2>
                 <span class="resumeEdit" @click="openDialog(8)"><a><i></i>添加</a></span>
             </div>
-            <div v-if="!dialogOpen[8].checked" class="otherCon">
-                <div class="listCon">
-                    <div class="listLeft">
-                        <span class="listTime otherTit">获奖荣誉</span>
-                    </div>
-                    <div class="listCenter">
-                        <div class="tit titOther" style="position: absolute; width: 0px;"></div>
-                        <div class="info" style="padding:3px 37px 30px 25px;">
-                            <p>123与萨半岛哈巴哈说不定哈比123与萨半岛哈巴哈说不定哈比123与萨半岛哈巴哈说不定哈比123与萨半岛哈巴哈说不定哈比123与萨半岛哈巴哈说不定哈比123与萨半岛哈巴哈说不定哈比123与萨半岛哈巴哈说不定哈比123与萨半岛哈巴哈说不定哈比123与萨半岛哈巴哈说不定哈比123与萨半岛哈巴哈说不定哈比</p>
-                        </div>
-                    </div>
-                    <div class="listRight">
-                        <span class="edit"><input name="" value="编辑" type="button"></span>
-                        <span class="del"><input name="" value="删除" type="button"></span>
-                    </div>
-                </div>
-            </div>
             <div v-if="dialogOpen[8].checked" class="resumeMangeInput">
                 <el-form :model="ruleForm9" ref="ruleForm9" label-width="100px" class="demo-ruleForm">
-                    <el-form-item label="学历" required>
+                    <el-form-item label="主题" required>
                         <el-col :span="8">
                             <el-select v-model="ruleForm9.theme" placeholder="请选择主题">
                                 <el-option label="兴趣爱好" value="0"></el-option>
@@ -1072,10 +984,27 @@
                         </el-col>
                     </el-form-item>
                     <el-form-item>
-                        <el-button type="primary" @click="submitForm('ruleForm5')">保存</el-button>
-                        <el-button @click="resetForm('ruleForm5',8)">重置</el-button>
+                        <el-button type="primary" @click="submitForm('ruleForm9')">保存</el-button>
+                        <el-button @click="resetForm('ruleForm9',8)">重置</el-button>
                     </el-form-item>
                 </el-form>
+            </div>
+            <div v-if="!dialogOpen[8].checked" class="otherCon">
+                <div class="listCon" v-for="(item,index) in ruleForm9.list">
+                    <div class="listLeft">
+                        <span class="listTime otherTit">{{item.theme}}</span>
+                    </div>
+                    <div class="listCenter">
+                        <div class="tit titOther" style="position: absolute; width: 0px;"></div>
+                        <div class="info" style="padding:3px 37px 30px 25px;">
+                            <p>{{item.desc}}</p>
+                        </div>
+                    </div>
+                    <div class="listRight">
+                        <span class="edit"><input @click="edit('ruleForm9',index,8)" value="编辑" type="button"></span>
+                        <span class="del"><input @click="del('ruleForm9',index)" value="删除" type="button"></span>
+                    </div>
+                </div>
             </div>
         </div>
         <!--<div class="resumeMange">

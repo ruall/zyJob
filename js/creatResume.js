@@ -4,41 +4,51 @@ var vm = new Vue({
         dialogOpen:[
             {
                 checked:false,
+                isEdit:false,
                 index:1
             },
             {
                 checked:false,
+                isEdit:false,
                 index:2
             },
             {
                 checked:false,
+                isEdit:false,
                 index:3
             },
             {
                 checked:false,
+                isEdit:false,
                 index:4
             },
             {
                 checked:false,
+                isEdit:false,
                 index:5
             },
             {
                 checked:false,
+                isEdit:false,
                 index:6
             },
             {
                 checked:false,
+                isEdit:false,
                 index:7
             },
             {
                 checked:false,
+                isEdit:false,
                 index:8
             },
             {
                 checked:false,
+                isEdit:false,
                 index:9
             },
         ],
+        snap:{},
         ruleForm: {
             name: '',
             sex:0,
@@ -65,18 +75,51 @@ var vm = new Vue({
             workAddress:'',
             job:'',
             price:'',
+            list:[
+                {
+                    name:'意向岗位',
+                    workAddress:["421303"],
+                    job:["00112"],
+                    price:6,
+                }
+            ],
         },
         ruleForm2:{
           eval:'',
+            list:[
+                {
+                    eval:'自我评价自我评价自我评价自我评价自我评价自我评价自我评价自我评价自我评价自我评价自我评价自我评价自我评价自我评价自我评价自我评价自我评价自我评价自我评价自我评价自我评价自我评价自我评价自我评价自我评价自我评价自我评价自我评价',
+                }
+            ]
         },
         ruleForm3:{
-            name:'萨达',
-            nature:'0',
-            person:'1',
-            industry:'2',
-            date:['2018-2','2020-10'],
-            occName:'1231231',
-            contact:'1、阿斯顿你就爱上你尽快,2、撒大家把大门扣篮啊ui前往悼念把那失败的借口案板上的那是vhd,2、撒大家把大门扣篮啊ui前往悼念把那失败的借口案板上的那是1、阿斯顿你就爱上你尽快,2、撒大家把大门扣篮啊ui前往悼念把那失败的借口案板上的那是vhd,2、撒大家把大门扣篮啊ui前往悼念把那失败的借口案板上的那是'
+            name:'',
+            nature:'',
+            person:'',
+            industry:'',
+            date:[],
+            occName:'',
+            contact:'',
+            list:[
+                {
+                    name:'公司名称',
+                    nature:'0',
+                    person:'1',
+                    industry:'2',
+                    date:['2018-2','2020-10'],
+                    occName:'职位名称',
+                    contact:'描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述'
+                },
+                {
+                    name:'公司名称1',
+                    nature:'0',
+                    person:'1',
+                    industry:'2',
+                    date:['2018-2','2020-10'],
+                    occName:'职位名称',
+                    contact:'描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述'
+                },
+            ],
         },
         ruleForm4:{
             resource: 0,
@@ -85,13 +128,47 @@ var vm = new Vue({
             date:'',
             educ:'',
             disc:'',
-            desc:''
+            desc:'',
+            list:[
+                {
+                    resource: 0,
+                    checked:0,
+                    name:'学校名称',
+                    date:['2018-1','2020-10'],
+                    educ:'3',
+                    disc:'专业名称',
+                    desc:'描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容',
+                },
+                {
+                    resource: 1,
+                    checked:0,
+                    name:'培训机构名称1',
+                    date:['2018-1','2020-10'],
+                    educ:'',
+                    disc:'培训项目名称',
+                    desc:'描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容描述内容',
+                }
+            ],
         },
         ruleForm5:{
             name:'',
             date:'',
             disc:'',
-            desc:''
+            desc:'',
+            list:[
+                {
+                    name:'项目名称',
+                    date:['2017-1','2019-11'],
+                    disc:'担任职位',
+                    desc:'项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述',
+                },
+                {
+                    name:'项目名称1',
+                    date:['2017-1','2019-11'],
+                    disc:'担任职位',
+                    desc:'项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述项目描述',
+                }
+            ],
         },
         ruleForm6:[
             {
@@ -112,8 +189,18 @@ var vm = new Vue({
             },
         ],
         ruleForm9:{
-            theme:'',
+            theme: '',
             desc:'',
+            list:[
+                {
+                    theme:'0',
+                    desc:'描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述',
+                },
+                {
+                    theme:'1',
+                    desc:'描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述',
+                }
+            ],
         },
         skill:[
             {
@@ -400,6 +487,10 @@ var vm = new Vue({
         resetForm(formName,v) {
             this.$refs[formName].resetFields();
             this.dialogOpen[v].checked = false
+            if(this.dialogOpen[v].isEdit){
+                this[formName].list.unshift(this.snap)
+                this.snap = {}
+            }
         },
         changeV(){
             console.log(this.ruleForm3.date)
@@ -430,6 +521,98 @@ var vm = new Vue({
 
             }
             this.dialogOpen[v].checked = true
-        }
+        },
+        edit(v,i,j){
+            if(v == 'ruleForm1'){
+                this[v].name = this[v].list[i].name;
+                this[v].workAddress = this[v].list[i].workAddress;
+                this[v].job = this[v].list[i].job;
+                this[v].price = this[v].list[i].price;
+                this.snap = {
+                    name:this[v].list[i].name,
+                    workAddress : this[v].list[i].workAddress,
+                    job : this[v].list[i].job,
+                    price : this[v].list[i].price,
+                }
+            }else if(v == 'ruleForm2'){
+                this[v].eval = this[v].list[i].eval;
+                this.snap = {
+                    eval:this[v].list[i].eval,
+                }
+            }else if(v == 'ruleForm3'){
+                this[v].name = this[v].list[i].name;
+                this[v].nature = this[v].list[i].nature;
+                this[v].person = this[v].list[i].person;
+                this[v].industry = this[v].list[i].industry;
+                this[v].date = this[v].list[i].date;
+                this[v].occName = this[v].list[i].occName;
+                this[v].contact = this[v].list[i].contact;
+                this.snap = {
+                    name:this[v].list[i].name,
+                    nature : this[v].list[i].nature,
+                    person : this[v].list[i].person,
+                    industry : this[v].list[i].industry,
+                    date : this[v].list[i].date,
+                    occName : this[v].list[i].occName,
+                    contact : this[v].list[i].contact
+                }
+            }else if(v == 'ruleForm4'){
+                this[v].resource = this[v].list[i].resource
+                this[v].checked = this[v].list[i].checked
+                this[v].name = this[v].list[i].name
+                this[v].date = this[v].list[i].date
+                this[v].educ = this[v].list[i].educ
+                this[v].disc = this[v].list[i].disc
+                this[v].desc = this[v].list[i].desc
+                this.snap = {
+                    resource:this[v].list[i].resource,
+                    checked : this[v].list[i].checked,
+                    name : this[v].list[i].name,
+                    date : this[v].list[i].date,
+                    educ : this[v].list[i].educ,
+                    disc : this[v].list[i].disc,
+                    desc : this[v].list[i].desc
+                }
+            }else if(v == 'ruleForm5'){
+                this[v].name = this[v].list[i].name
+                this[v].date = this[v].list[i].date
+                this[v].disc = this[v].list[i].disc
+                this[v].desc = this[v].list[i].desc
+                this.snap = {
+                    name : this[v].list[i].name,
+                    date : this[v].list[i].date,
+                    disc : this[v].list[i].disc,
+                    desc : this[v].list[i].desc
+                }
+            }else if(v == 'ruleForm9'){
+                this[v].theme = this[v].list[i].theme
+                this[v].desc = this[v].list[i].desc
+                this.snap = {
+                    theme : this[v].list[i].theme,
+                    desc : this[v].list[i].desc
+                }
+            }
+            this.dialogOpen[j].isEdit = true
+            this.dialogOpen[j].checked = true
+            this[v].list.splice(i,1)
+        },
+        del(v,i){
+            this.$confirm('确定要删除吗?', '提示', {
+                confirmButtonText: '确定',
+                cancelButtonText: '取消',
+                type: 'warning'
+            }).then(() => {
+                this[v].list.splice(i,1)
+                this.$message({
+                    type: 'success',
+                    message: '删除成功!'
+                });
+            }).catch(() => {
+                this.$message({
+                    type: 'info',
+                    message: '已取消删除'
+                });
+            });
+        },
     }
 })

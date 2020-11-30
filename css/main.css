@@ -50,7 +50,8 @@ a:visited {
 }
 a:hover {
   color: #000;
-  text-decoration: underline;
+  text-decoration: none;
+  cursor: pointer;
 }
 /* 标签属性，textarea,input 强制输入时内容超出时换行，打断 */
 textarea,

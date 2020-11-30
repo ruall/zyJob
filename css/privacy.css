@@ -1,0 +1,234 @@
+.jright {
+  width: 980px;
+  background: #fff;
+  float: left;
+  display: inline;
+}
+.jright .content {
+  width: 920px;
+  padding: 0 30px;
+  float: left;
+}
+.jright .content .jobtitle {
+  width: 100%;
+  height: 41px;
+  float: left;
+  margin-top: 10px;
+}
+.jright .content .jobtitle .tithead {
+  height: 40px;
+  border-bottom: 1px solid #EFEFEF;
+  width: 100%;
+}
+.jright .content .jobtitle .tithead h2 {
+  float: left;
+  font-size: 18px;
+  color: #444;
+  height: 38px;
+  border-bottom: 3px solid #F0534E;
+  background: #fff;
+  line-height: 38px;
+  padding-right: 5px;
+}
+.jright .content .setresume {
+  padding: 0 100px;
+  width: 720px;
+  float: left;
+}
+.jright .content .setresume .el-col {
+  padding-bottom: 20px;
+}
+.jright .content .setresume .el-col:first-of-type {
+  padding-top: 10px;
+}
+.jright .content .setresume .el-col:last-of-type {
+  padding-bottom: 10px;
+}
+.jright .content .setresume .stitle {
+  width: 100%;
+  float: left;
+  height: 40px;
+  margin-top: 25px;
+  line-height: 40px;
+  font-size: 15px;
+  color: #787878;
+}
+.jright .content .setresume .save {
+  float: left;
+  height: 36px;
+  margin-top: 15px;
+  width: 100%;
+}
+.jright .content .setresume .save .savebutton {
+  border: none;
+  background: #D45859;
+  width: 120px;
+  height: 34px;
+  float: left;
+  color: #fefefe;
+  border-radius: 3px;
+  box-shadow: 0px 1px 2px #a4a6a6;
+  font-size: 17px;
+  line-height: 34px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  margin-right: 20px;
+  display: inline;
+}
+.jright .content .setresume .filtration {
+  font-size: 14px;
+  float: left;
+  width: 100%;
+  margin-top: 5px;
+  height: 30px;
+  line-height: 30px;
+  color: #5F5F5F;
+}
+.jright .content .setresume .shield {
+  color: #5F5F5F;
+  float: left;
+  margin-top: 20px;
+}
+.jright .content .setresume .search {
+  width: 450px;
+  height: 40px;
+  float: left;
+  margin-top: 5px;
+  margin-right: 270px;
+  display: inline;
+  border: 1px solid #D45859;
+}
+.jright .content .setresume .search .sleft {
+  width: 336px;
+  height: 40px;
+  float: left;
+}
+.jright .content .setresume .search .sleft input {
+  width: 320px;
+  height: 38px;
+  line-height: 40px;
+  border: none;
+  padding: 0 8px;
+  font-size: 14px;
+  outline: none;
+}
+.jright .content .setresume .search .sright {
+  width: 112px;
+  float: left;
+  height: 40px;
+}
+.jright .content .setresume .search .sright .subsearch {
+  height: 40px;
+  width: 114px;
+  float: left;
+  line-height: 40px;
+  background: #D45859;
+  font-size: 17px;
+  border: none;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+.jright .content .setresume .issecrecy {
+  width: 670px;
+  margin-right: 50px;
+  float: left;
+  margin-top: 15px;
+  display: inline;
+}
+.jright .content .setresume .issecrecy .ilist {
+  padding: 0 15px;
+  float: left;
+  width: 640px;
+  background: #F7F7F7;
+}
+.jright .content .setresume .issecrecy .ilist .stle {
+  width: 100%;
+  color: #2B2B2B;
+  font-size: 16px;
+  height: 44px;
+  line-height: 44px;
+  float: left;
+  margin-top: 10px;
+}
+.jright .content .setresume .issecrecy .ilist ul {
+  width: 100%;
+  float: left;
+}
+.jright .content .setresume .issecrecy .ilist ul li {
+  float: left;
+  height: 28px;
+  width: 100%;
+  line-height: 28px;
+}
+.jright .content .setresume .issecrecy .ilist ul li span {
+  float: left;
+  height: 26px;
+  line-height: 26px;
+  width: 400px;
+}
+.jright .content .setresume .issecrecy .ilist ul li span a {
+  color: #2B2B2B;
+  font-size: 13px;
+  height: 28px;
+  line-height: 28px;
+  float: left;
+}
+.jright .content .setresume .issecrecy .ilist ul li i {
+  background: url(../images/icon4.png) 0px 6px no-repeat;
+  float: left;
+  width: 33px;
+  height: 28px;
+  cursor: pointer;
+}
+.jright .content .setresume .issecrecy .ilist .stopper {
+  height: 10px;
+  float: left;
+  width: 100%;
+}
+.jright .content .setresume .comlist {
+  width: 100%;
+  float: left;
+  margin-top: 15px;
+}
+.jright .content .setresume .comlist ul {
+  width: 716px;
+  padding: 0 10px;
+  float: left;
+}
+.jright .content .setresume .comlist ul li {
+  width: 100%;
+  float: left;
+  height: 26px;
+  line-height: 26px;
+}
+.jright .content .setresume .comlist ul li span {
+  float: left;
+  height: 26px;
+  line-height: 26px;
+  width: 400px;
+  font-size: 14px;
+}
+.jright .content .setresume .comlist ul li span a {
+  float: left;
+  height: 26px;
+  line-height: 26px;
+  color: #6C9DE5;
+}
+.jright .content .setresume .comlist ul li i {
+  float: left;
+  width: 23px;
+  height: 26px;
+  cursor: pointer;
+  background: url(../images/icon4.png) 0 -44px no-repeat;
+}
+.jright .content .setresume .comlist ul li em {
+  float: left;
+  height: 26px;
+  line-height: 26px;
+  color: #6C9DE5;
+  margin-left: 10px;
+  display: inline;
+}
+/*# sourceMappingURL=privacy.css.map */

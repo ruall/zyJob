@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>面试通知</title>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/creatResume.css">
+    <link rel="stylesheet" href="./css/interview.css">
+</head>
+<body>
+
+<header>
+    <div class="header">
+        <div class="left"><span>人才招聘</span></div>
+        <div class="right">
+            <ul>
+                <li>首页</li>
+                <li>找工作</li>
+                <li class="cur">找人才</li>
+                <li>社区</li>
+                <li>会员登录</li>
+                <li class="search">
+                    <span><input type="text" placeholder="普工、销售、客服"></span>
+                    <i class="iconfont icon-search1"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div class="nav-img"><img src="./images/img4.png" alt=""></div>
+
+
+<div class="creatResume" id="interview">
+    <div class="left">
+        <ul>
+            <li>账号中心</li>
+            <li>中文简历</li>
+            <li>简历管理</li>
+            <li>隐私设置</li>
+            <li>账号设置</li>
+        </ul>
+        <ul>
+            <li class="cur">面试通知</li>
+            <li>谁浏览了我</li>
+            <li>简历投递记录</li>
+            <li>职位收藏夹</li>
+            <li>浏览记录</li>
+        </ul>
+    </div>
+    <div class="right">
+        <div class="jright">
+            <div class="content">
+                <div class="jobtitle">
+                    <div class="tithead">
+                        <h2>面试通知</h2>
+                    </div>
+                </div>
+                <div class="jobsearch">
+                    <form name="Formso" id="Formso" action="http://www.job0722.com/personal/interview" method="post">
+                        <input type="hidden" name="_token" value="8LU7CybGgk6yEP3euckcWnNU9HmjpwoiFU4kdx7W">
+                        <span><input name="keyword" class="keyword" id="keyword" placeholder="请输入公司名称或者职位名称" type="text"></span>
+                        <span><input name="submit" class="searpos" value="" type="submit"></span>
+                    </form>
+                </div>
+                <div class="pinfo">
+                    <form name="thisForm" action="" method="post">
+                        <input type="hidden" name="_token" value="8LU7CybGgk6yEP3euckcWnNU9HmjpwoiFU4kdx7W">
+                        <div class="listmenu">
+                            <div style="margin-bottom: 20px">
+                                <el-button type="danger">删除记录</el-button>
+                            </div>
+                            <el-table
+                                    ref="multipleTable"
+                                    :data="tableData"
+                                    tooltip-effect="dark"
+                                    style="width: 100%"
+                                    :stripe="true"
+                                    :border="true"
+                                    @selection-change="handleSelectionChange">
+                                <el-table-column
+                                        type="selection"
+                                        align="center"
+                                        width="55">
+                                </el-table-column>
+                                <el-table-column
+                                        label="职位名称"
+                                        align="center"
+                                        width="120">
+                                    <template slot-scope="scope">{{ scope.row.name }}</template>
+                                </el-table-column>
+                                <el-table-column
+                                        prop="price"
+                                        label="薪资待遇"
+                                        align="center"
+                                        width="120">
+                                </el-table-column>
+                                <el-table-column
+                                        prop="address"
+                                        label="面试地点"
+                                        align="center"
+                                        show-overflow-tooltip>
+                                </el-table-column>
+                                <el-table-column
+                                        prop="time"
+                                        label="面试时间"
+                                        align="center"
+                                        show-overflow-tooltip>
+                                </el-table-column>
+                                <el-table-column label="操作" align="center">
+                                    <template slot-scope="scope">
+                                        <el-button
+                                                size="mini"
+                                                @click="handleEdit(scope.$index, scope.row)">编辑</el-button>
+                                        <el-button
+                                                size="mini"
+                                                type="danger"
+                                                @click="handleDelete(scope.$index, scope.row)">删除</el-button>
+                                    </template>
+                                </el-table-column>
+                            </el-table>
+                        </div>
+                    </form>
+                </div>
+                <div class="page_list" style="width: 100%; float: left; margin-top:15px;">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="top">
+        <ul>
+            <li>
+                <i class="iconfont icon-mianfei"></i>
+                <span>免费求职</span>
+                <span>企业直招 不收取任何费用</span>
+            </li>
+            <li>
+                <i class="iconfont icon-jingzhun"></i>
+                <span>专业招聘</span>
+                <span>专人服务 入职速度更快</span>
+            </li>
+            <li>
+                <i class="iconfont icon-you"></i>
+                <span>优质服务</span>
+                <span>企业社区问答 免费信贷</span>
+            </li>
+            <li>
+                <i class="iconfont icon-ren-huawuyuan"></i>
+                <span>服务热线 : 000-000-0000</span>
+                <span>求职QQ群：258506508</span>
+            </li>
+        </ul>
+    </div>
+    <div class="foot">
+        <div class="bottom">
+            <div class="left">
+                <i class="iconfont icon-fuwurexian"></i>
+                <span>服务热线</span>
+                <span>000-000-00000</span>
+                <span>工作日：9：00-19：00</span>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>
+                        <dl>
+                            <dt><a href="#">网站首页</a></dt>
+                            <dd><a href="#">销售/文员</a></dd>
+                            <dd><a href="#">普工/技工</a></dd>
+                            <dd><a href="#">普工/技工</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><a href="#">找工作</a></dt>
+                            <dd><a href="#">求职流程</a></dd>
+                            <dd><a href="#">企业推荐</a></dd>
+                            <dd><a href="#">前沿岗位</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt><a href="#">社区</a></dt>
+                            <dd><a href="#">热门文章</a></dd>
+                            <dd><a href="#">前沿资讯</a></dd>
+                            <dd><a href="#">求职帮助</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="//unpkg.com/vue/dist/vue.js"></script>
+<script src="//unpkg.com/element-ui@2.14.1/lib/index.js"></script>
+<script src="./js/interview.js"></script>
+</body>
+</html>

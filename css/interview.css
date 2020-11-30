@@ -1,0 +1,194 @@
+.jright {
+  width: 980px;
+  background: #fff;
+  float: left;
+  display: inline;
+}
+.jright .content {
+  width: 100%;
+  padding: 0 30px;
+  float: left;
+}
+.jright .content .jobtitle {
+  width: 100%;
+  height: 41px;
+  float: left;
+  margin-top: 10px;
+}
+.jright .content .jobtitle .tithead {
+  height: 40px;
+  border-bottom: 1px solid #EFEFEF;
+  width: 100%;
+}
+.jright .content .jobtitle .tithead ul {
+  float: left;
+}
+.jright .content .jobtitle .tithead ul li {
+  float: left;
+  font-size: 17px;
+  height: 38px;
+  line-height: 38px;
+  margin-right: 15px;
+  padding-right: 5px;
+  font-weight: bold;
+}
+.jright .content .jobtitle .tithead ul li a {
+  color: #A9A9A9;
+  display: block;
+}
+.jright .content .jobtitle .tithead ul li.active {
+  border-bottom: 3px solid #F0534E;
+}
+.jright .content .jobtitle .tithead ul li.active a {
+  color: #444;
+}
+.jright .content .jobtitle .tithead h2 {
+  float: left;
+  font-size: 18px;
+  color: #444;
+  height: 38px;
+  border-bottom: 3px solid #F0534E;
+  background: #fff;
+  line-height: 38px;
+  padding-right: 5px;
+}
+.jright .content .jobsearch {
+  float: left;
+  width: 880px;
+  margin-top: 40px;
+  height: 40px;
+  padding-left: 40px;
+}
+.jright .content .jobsearch span {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  display: inline;
+}
+.jright .content .jobsearch span .keyword {
+  width: 350px;
+  border: 1px solid #CDCDCD;
+  padding: 0 20px;
+  font-size: 14px;
+  border-right: none;
+  height: 38px;
+  line-height: 38px;
+  outline: none;
+}
+.jright .content .jobsearch span .searpos {
+  width: 60px;
+  border: none;
+  font-size: 14px;
+  text-align: center;
+  height: 40px;
+  outline: none;
+  background: #EB5348 url(../images/icon6.png) 17px -83px no-repeat;
+  color: #fff;
+  cursor: pointer;
+}
+.jright .content .pinfo {
+  width: 100%;
+  float: left;
+  margin-top: 35px;
+}
+.jright .content .pinfo .listmenu {
+  width: 100%;
+  float: left;
+}
+.jright .content .pinfo .listmenu ul {
+  float: left;
+  height: 85px;
+  width: 100%;
+  border-top: 1px solid #E0E0E0;
+  color: #313131;
+}
+.jright .content .pinfo .listmenu ul li {
+  float: left;
+  height: 85px;
+  line-height: 85px;
+  font-size: 14px;
+}
+.jright .content .pinfo .listmenu ul li label {
+  color: #454545;
+  float: left;
+  margin-left: 2px;
+}
+.jright .content .pinfo .listmenu ul li .checkboxs {
+  width: 16px;
+  height: 16px;
+  margin-top: 12px;
+}
+.jright .content .pinfo .listmenu ul.one {
+  background: #F2F2F2;
+  border: none;
+  height: 38px;
+  border-top: 1px solid #E0E0E0;
+}
+.jright .content .pinfo .listmenu ul.one li {
+  float: left;
+  height: 38px;
+  line-height: 38px;
+  font-size: 15px;
+}
+.jright .content .pinfo .listmenu ul.one li input.checkboxs {
+  margin-top: 11px;
+  float: left;
+}
+.jright .content .pinfo .listmenu ul.one li.p1 {
+  width: 40px;
+}
+.jright .content .pinfo .listmenu ul.one li.p1 input {
+  margin-top: 34px;
+  margin-left: 12px;
+  float: left;
+}
+.jright .content .pinfo .listmenu ul.one li.p2 {
+  width: 260px;
+}
+.jright .content .pinfo .listmenu ul.one li.p3 {
+  width: 160px;
+}
+.jright .content .pinfo .listmenu ul.one li.p4 {
+  width: 150px;
+}
+.jright .content .pinfo .listmenu ul.one li.p5 {
+  width: 140px;
+}
+.jright .content .pinfo .listmenu ul.one li.p6 {
+  width: 110px;
+}
+.jright .content .pinfo .listmenu .information {
+  width: 100%;
+  height: 40px;
+  float: left;
+  margin-top: 15px;
+  line-height: 40px;
+  font-size: 14px;
+}
+.jright .content .pinfo .listmenu .information span {
+  color: #a5a5a5;
+}
+.jright .content .pinfo .listmenu .information span em {
+  color: #FF3300;
+  font-style: normal;
+}
+.jright .content .pinfo .listmenu .nullcon {
+  width: 100%;
+  height: 85px;
+  line-height: 80px;
+  float: left;
+  text-align: center;
+  font-size: 15px;
+  color: #888;
+  border-bottom: 1px solid #E0E0E0;
+  border-top: 1px solid #E0E0E0;
+}
+.jright .content .page_list {
+  width: 100%;
+  float: left;
+  margin-top: 15px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+/*# sourceMappingURL=interview.css.map */

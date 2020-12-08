@@ -11,16 +11,15 @@ $port = 3306;
 
 $link = mysqli_connect($host, $user, $pwd, $dbname, $port);
 
-//$sql = "INSERT INTO `login`(`name` , `pwd`) VALUES('{$userName}' , '{$userPwd}')"; 注册
-
-$sql = "SELECT * FROM `login` WHERE `name`='{$userName}' AND `pwd`='{$userPwd}'"; // 登录
+$sql = "SELECT * FROM `login` WHERE `name`='{$userName}' AND `pwd`='{$userPwd}'";
 
 $result = mysqli_query($link, $sql);
-echo $result;
 
-// // 写入成功,执行结果是true,写入失败是false
-if($result == true){
-    echo json_encode('1');
+$row = mysqli_fetch_array($result); //值传给数组
+
+if($row['name']===$userName && $row['pwd'] ===$userPwd){
+    echo json_encode('200');
+    //如果有用户名和密码匹配，则echo
 }else{
     echo json_encode('0');
 }

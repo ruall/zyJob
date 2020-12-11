@@ -23,9 +23,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2a6b272-6f19-46f8-8a82-6ebac8c6e6a9" name="Default Changelist" comment="php环境搭建">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/regist.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/cw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/icon/QQ-line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/icon/QQ.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/icon/phone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/icon/sina-line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/icon/sina.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/icon/wx-line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/icon/wx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/check.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modal_dialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/yz.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/api.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/login.php" afterDir="false" />
@@ -41,9 +58,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="Less File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -58,9 +75,6 @@
   </component>
   <component name="PhpWebServerValidation" deployment_server_id="d72c480c-52fd-4f89-bef5-50a510b8e9f7" path_to_validation_script="D:\job" selected_validation_type="REMOTE" web_path_to_validation_script="http://127.0.0.1/" />
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP5.6" />
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
-  </component>
   <component name="ProjectId" id="1joMV4iwPT8GzLeqZlJ0adDBmy7" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -78,18 +92,19 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/server" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
     <property name="list.type.of.created.stylesheet" value="Less" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\job\js" />
+      <recent name="D:\job\images" />
+      <recent name="D:\job\css" />
       <recent name="D:\job\server" />
       <recent name="D:\job" />
-      <recent name="D:\job\js" />
-      <recent name="D:\job\css" />
     </key>
   </component>
   <component name="RunManager">
@@ -137,7 +152,14 @@
       <workItem from="1607069525518" duration="2232000" />
       <workItem from="1607304259946" duration="748000" />
       <workItem from="1607327317802" duration="5296000" />
-      <workItem from="1607389059064" duration="12779000" />
+      <workItem from="1607389059064" duration="12813000" />
+      <workItem from="1607414271520" duration="40000" />
+      <workItem from="1607414461898" duration="2295000" />
+      <workItem from="1607476869792" duration="874000" />
+      <workItem from="1607563004366" duration="611000" />
+      <workItem from="1607564866865" duration="5706000" />
+      <workItem from="1607649700470" duration="535000" />
+      <workItem from="1607650251092" duration="8198000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1606119986849</created>
@@ -202,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607333164830</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="php环境搭建">
+      <created>1607412619397</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1607412619397</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,6 +257,17 @@
     <MESSAGE value="静态页面" />
     <MESSAGE value="php环境搭建" />
     <option name="LAST_COMMIT_MESSAGE" value="php环境搭建" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/server/login.php</url>
+          <line>21</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
